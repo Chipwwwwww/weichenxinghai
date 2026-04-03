@@ -1,53 +1,61 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { products } from "@/data/brandContent";
 
 export const metadata: Metadata = {
-  title: "結緣商城",
-  description: "探索微塵星海結緣商城，以視覺設計靈感打造的三款商品。",
+  title: "品牌選品",
+  description: "微塵星海三款生活選品：扭扭杯、桌面清淨器與空性香境杯。",
 };
-
-const products = [
-  {
-    name: "扭扭杯",
-    description: "以視覺折曲光學為設計靈感的禪意茶器",
-  },
-  {
-    name: "微塵淨境平面清淨器",
-    description: "以濾網過濾技術還原平面空氣質感",
-  },
-  {
-    name: "空性香境杯",
-    description: "活性碳除味結合植萃香氛，設計靈感取自禪堂淨香文化",
-  },
-];
 
 export default function ShopPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-light text-white">結緣商城</h1>
-      <div className="mt-8 grid gap-5 md:grid-cols-3">
+      <h1 className="text-4xl font-semibold text-brand-deep">品牌選品</h1>
+      <p className="mt-3 max-w-3xl text-sm leading-7 text-brand-slate">
+        以平安、祝福與淨感為核心，從器物設計、香氣陪伴到空間氛圍，整理出可日常使用也適合送禮的三款選品。
+      </p>
+
+      <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
-          <article
-            key={product.name}
-            className="overflow-hidden rounded-3xl border border-white/10 bg-[#111a32]"
-          >
-            <div className="aspect-[4/3] w-full bg-gradient-to-br from-[#172645] to-[#0c1324]" />
+          <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white">
+            <div className="relative aspect-[4/3] bg-[#f3f4ef]">
+              <Image
+                src={product.image}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+            </div>
             <div className="space-y-4 p-6">
-              <h2 className="text-xl font-light text-brand-cyan">{product.name}</h2>
-              <p className="text-sm text-slate-200">{product.description}</p>
-              <a
-                href="#"
-                className="inline-flex rounded-full border border-brand-gold/50 px-5 py-2 text-sm text-brand-gold transition hover:bg-brand-gold hover:text-[#1a1305]"
+              <h2 className="text-xl font-semibold text-brand-deep">{product.name}</h2>
+              <p className="text-sm font-medium text-brand-teal">{product.tagline}</p>
+              <p className="text-sm leading-7 text-brand-slate">{product.description}</p>
+              <ul className="space-y-2 text-sm text-brand-slate">
+                {product.bullets.map((bullet) => (
+                  <li key={bullet}>• {bullet}</li>
+                ))}
+              </ul>
+              <p className="text-xs text-brand-slate">{product.useCases}</p>
+              <button
+                type="button"
+                className="rounded-full border border-brand-teal px-5 py-2 text-sm font-medium text-brand-teal transition hover:bg-brand-teal hover:text-white"
               >
-                前往結緣
-              </a>
+                {product.cta}
+              </button>
             </div>
           </article>
         ))}
       </div>
 
-      <p className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
-        本商城所有商品文案僅描述設計靈感與使用情境，不涉及任何功效聲稱。
-      </p>
+      <div className="mt-10 rounded-2xl border border-brand-gold/40 bg-[#fffdf8] p-5 text-sm leading-7 text-brand-slate">
+        所有商品文案僅描述設計靈感、外觀材質、使用情境與空間氛圍，不涉及醫療療效或未經證實之功能聲稱。
+      </div>
+
+      <Link href="/" className="mt-8 inline-flex text-sm font-medium text-brand-teal hover:text-[#1f5a54]">
+        返回首頁，查看品牌理念與 FAQ
+      </Link>
     </div>
   );
 }
