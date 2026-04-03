@@ -1,31 +1,32 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "關於",
-  description: "認識微塵星海的品牌故事、IP定位與現象學對應原則。",
+  title: "品牌理念",
+  description: "認識微塵星海如何把平安、祝福與陪伴，轉化為日常可感知的生活形式。",
 };
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto w-full max-w-5xl space-y-10 px-4 py-16 sm:px-6 lg:px-8">
-      <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h1 className="text-3xl font-light text-white">關於微塵星海</h1>
-        <p className="mt-6 leading-8 text-slate-200">
-          微塵星海不是宗教頻道，也不是科普頻道。它是一個觀察角度——當現代物理學描述宇宙在極大尺度下的互聯結構，當兩千五百年前的文本描述「一即一切、一切即一」，這種結構上的高度一致性，本身就值得被認真凝視。我們用影像做這件事。
+    <div className="mx-auto w-full max-w-5xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
+      <section className="rounded-3xl border border-brand-teal/10 bg-white p-8">
+        <h1 className="text-3xl font-semibold text-brand-deep">關於微塵星海</h1>
+        <p className="mt-6 leading-8 text-brand-slate">
+          微塵星海是一個把祝福帶回日常生活的品牌。我們不強調神秘說法，而是專注在可被感受的陪伴：一句問候、
+          一份香氣、一道柔和光影，讓平安與心意在日常裡被穩定地傳遞。
         </p>
       </section>
 
       <section className="grid gap-4 md:grid-cols-2">
-        <article className="rounded-3xl border border-brand-cyan/30 bg-[#0f1b36] p-6">
-          <h2 className="text-xl font-light text-brand-cyan">IP 定位</h2>
-          <p className="mt-4 text-sm leading-7 text-slate-200">
-            微塵星海定位為「物理現象學 × 佛教意象」的純視覺 IP，透過極簡敘事與深色調影像語言，建立可反覆凝視的心靈場景。
+        <article className="rounded-3xl border border-brand-teal/20 bg-white p-6">
+          <h2 className="text-xl font-semibold text-brand-teal">品牌定位</h2>
+          <p className="mt-4 text-sm leading-7 text-brand-slate">
+            以平安、祝福、淨感為核心的生活風格品牌，透過選品與內容，讓每個人都能用自然、莊重且溫柔的方式，照顧自己與家人的日常。
           </p>
         </article>
-        <article className="rounded-3xl border border-brand-gold/30 bg-[#161d34] p-6">
-          <h2 className="text-xl font-light text-brand-gold">現象學對應原則</h2>
-          <p className="mt-4 text-sm leading-7 text-slate-200">
-            以「宇宙大尺度互聯性」對應「因陀羅網拓撲結構」，在視覺中呈現彼此映照、相即相入的關係，讓觀者在當下體驗結構之美。
+        <article className="rounded-3xl border border-brand-gold/35 bg-[#fffdf8] p-6">
+          <h2 className="text-xl font-semibold text-brand-deep">我們的堅持</h2>
+          <p className="mt-4 text-sm leading-7 text-brand-slate">
+            所有商品文案只描述設計靈感、材質質感、使用情境與空間氛圍。我們相信真正長久的信任，來自清楚、誠實、可被驗證的溝通。
           </p>
         </article>
       </section>
