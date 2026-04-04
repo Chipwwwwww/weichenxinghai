@@ -1,0 +1,9 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="500" rx="40" fill="#F7F5EE"/>
+  <circle cx="220" cy="250" r="120" stroke="#2E6D67" stroke-width="12"/>
+  <path d="M145 270C170 230 196 212 220 212C244 212 270 230 295 270" stroke="#2E6D67" stroke-width="12" stroke-linecap="round"/>
+  <path d="M162 295C180 267 199 252 220 252C241 252 260 267 278 295" stroke="#C6A34E" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="220" cy="192" r="15" fill="#C6A34E"/>
+  <text x="390" y="235" fill="#143B3A" font-size="96" font-family="'Noto Serif TC', 'PingFang TC', serif" letter-spacing="10">微塵星海</text>
+  <text x="394" y="304" fill="#2E6D67" font-size="34" font-family="'Inter', 'Helvetica Neue', sans-serif" letter-spacing="8">WEICHEN XINGHAI</text>
+</svg>

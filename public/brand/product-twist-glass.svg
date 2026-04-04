@@ -1,0 +1,7 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#EEF3F2"/>
+  <circle cx="970" cy="180" r="130" fill="#DCECEA"/>
+  <rect x="390" y="180" width="420" height="520" rx="90" fill="#CFE3E1"/>
+  <path d="M450 220C525 265 675 265 750 220V640C675 685 525 685 450 640V220Z" fill="#F8FBFB" stroke="#7BA7A2" stroke-width="10"/>
+  <text x="110" y="760" fill="#143B3A" font-size="58" font-family="'Noto Serif TC', serif">扭扭杯 / 異形玻璃杯</text>
+</svg>

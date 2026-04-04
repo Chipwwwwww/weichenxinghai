@@ -1,10 +1,10 @@
 export const brandAssets = {
-  logoMark: "/brand/logo-mark.png",
-  logoWordmark: "/brand/logo-wordmark.png",
+  logoMark: "/brand/logo-mark.svg",
+  logoWordmark: "/brand/logo-wordmark.svg",
   products: {
-    twistGlass: "/brand/product-twist-glass.jpg",
-    purifier: "/brand/product-air-purifier.jpg",
-    aromaCup: "/brand/product-aroma-cup.jpg",
+    twistGlass: "/brand/product-twist-glass.svg",
+    purifier: "/brand/product-air-purifier.svg",
+    aromaCup: "/brand/product-aroma-cup.svg",
   },
 } as const;
 
