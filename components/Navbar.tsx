@@ -21,6 +21,8 @@ export default function Navbar() {
             <img
               src={brandAssets.logoMark}
               alt="微塵星海 logo"
+              loading="eager"
+              decoding="async"
               className="absolute inset-0 h-full w-full object-contain p-1"
             />
           </span>
