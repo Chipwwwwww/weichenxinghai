@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { products } from "@/data/brandContent";
 
@@ -19,13 +18,11 @@ export default function ShopPage() {
       <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
           <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white">
-            <div className="relative aspect-[4/3] bg-[#f3f4ef]">
-              <Image
+            <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f4ef]">
+              <img
                 src={product.image}
                 alt={product.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="absolute inset-0 h-full w-full object-cover"
               />
             </div>
             <div className="space-y-4 p-6">
