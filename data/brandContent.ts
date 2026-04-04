@@ -1,10 +1,12 @@
+import { uploadedImages } from "@/data/uploadedImages";
+
 export const brandAssets = {
-  logoMark: "/brand/logo-mark.svg",
-  logoWordmark: "/brand/logo-wordmark.svg",
+  logoMark: uploadedImages.logoMarkDataUri,
+  logoWordmark: uploadedImages.logoWordmarkDataUri,
   products: {
-    twistGlass: "/brand/product-twist-glass.svg",
-    purifier: "/brand/product-air-purifier.svg",
-    aromaCup: "/brand/product-aroma-cup.svg",
+    twistGlass: uploadedImages.twistGlassDataUri,
+    purifier: uploadedImages.purifierDataUri,
+    aromaCup: uploadedImages.aromaCupDataUri,
   },
 } as const;
 

@@ -70,11 +70,13 @@ export default function HomePage() {
 
           <div className="rounded-3xl border border-brand-teal/15 bg-white p-6 shadow-[0_20px_60px_rgba(16,34,36,0.08)]">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#f7f7f2]">
-              <img
-                src={brandAssets.logoWordmark}
-                alt="微塵星海品牌識別"
-                className="absolute inset-0 h-full w-full object-contain p-6"
-              />
+            <img
+              src={brandAssets.logoWordmark}
+              alt="微塵星海品牌識別"
+              loading="eager"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-contain p-6"
+            />
             </div>
             <p className="mt-4 text-sm leading-6 text-brand-slate">
               願你心安，也願你把這份平安送給重要的人。
@@ -91,6 +93,8 @@ export default function HomePage() {
             <img
               src={brandAssets.logoMark}
               alt="微塵星海標誌"
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 h-full w-full object-contain p-6"
             />
           </div>
@@ -138,6 +142,8 @@ export default function HomePage() {
                 <img
                   src={product.image}
                   alt={product.name}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
