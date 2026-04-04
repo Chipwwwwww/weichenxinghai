@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { brandAssets } from "@/data/brandContent";
@@ -19,7 +18,11 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="relative h-8 w-8 overflow-hidden rounded-full border border-brand-gold/40 bg-white">
-            <Image src={brandAssets.logoMark} alt="微塵星海 logo" fill className="object-contain p-1" sizes="32px" />
+            <img
+              src={brandAssets.logoMark}
+              alt="微塵星海 logo"
+              className="absolute inset-0 h-full w-full object-contain p-1"
+            />
           </span>
           <span className="text-sm font-medium tracking-[0.18em] text-brand-deep">微塵星海</span>
         </Link>

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { brandAssets, faqItems, products } from "@/data/brandContent";
 
@@ -71,12 +70,10 @@ export default function HomePage() {
 
           <div className="rounded-3xl border border-brand-teal/15 bg-white p-6 shadow-[0_20px_60px_rgba(16,34,36,0.08)]">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#f7f7f2]">
-              <Image
+              <img
                 src={brandAssets.logoWordmark}
                 alt="微塵星海品牌識別"
-                fill
-                className="object-contain p-6"
-                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="absolute inset-0 h-full w-full object-contain p-6"
               />
             </div>
             <p className="mt-4 text-sm leading-6 text-brand-slate">
@@ -91,7 +88,11 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="relative aspect-square max-w-[260px] overflow-hidden rounded-2xl border border-brand-gold/40 bg-[#f9f6ea]">
-            <Image src={brandAssets.logoMark} alt="微塵星海標誌" fill className="object-contain p-6" sizes="260px" />
+            <img
+              src={brandAssets.logoMark}
+              alt="微塵星海標誌"
+              className="absolute inset-0 h-full w-full object-contain p-6"
+            />
           </div>
           <div className="space-y-4">
             <h2 className="text-3xl font-semibold text-brand-deep">品牌理念</h2>
@@ -133,13 +134,11 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-3">
           {products.map((product) => (
             <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white">
-              <div className="relative aspect-[4/3] bg-[#f3f4ef]">
-                <Image
+              <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f4ef]">
+                <img
                   src={product.image}
                   alt={product.name}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
               </div>
               <div className="space-y-4 p-6">
