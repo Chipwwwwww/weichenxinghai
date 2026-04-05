@@ -18,10 +18,15 @@ body {
 
 body {
   min-height: 100vh;
+  line-height: 1.6;
 }
 
 .glass-nav {
   background: rgba(247, 245, 239, 0.9);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(46, 109, 102, 0.12);
+}
+
+::selection {
+  background: rgba(46, 109, 102, 0.16);
 }

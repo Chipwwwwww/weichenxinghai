@@ -19,18 +19,17 @@ export default function Navbar() {
     <header className="glass-nav fixed inset-x-0 top-0 z-50">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="relative h-8 w-8 overflow-hidden rounded-full border border-brand-gold/40 bg-white">
+          <span className="relative h-8 w-36 overflow-hidden rounded-md bg-transparent sm:w-44">
             <Image
-              src={brandAssets.logoMark}
-              alt="微塵星海 logo"
+              src={brandAssets.logoWordmark}
+              alt="微塵星海品牌識別"
               loading="eager"
               decoding="async"
-              className="absolute inset-0 h-full w-full object-contain p-1"
+              className="absolute inset-0 h-full w-full object-contain"
               fill
-              sizes="32px"
+              sizes="(max-width: 640px) 144px, 176px"
             />
           </span>
-          <span className="text-sm font-medium tracking-[0.18em] text-brand-deep">微塵星海</span>
         </Link>
 
         <button
@@ -57,7 +56,7 @@ export default function Navbar() {
             href={siteConfig.lineOaUrl}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-brand-teal px-4 py-2 text-xs font-medium text-brand-teal transition hover:bg-brand-teal hover:text-white"
+            className="rounded-full border border-brand-teal/70 px-4 py-2 text-xs font-medium text-brand-teal transition hover:bg-brand-teal hover:text-white"
           >
             {siteConfig.cta.joinLine}
           </a>
@@ -65,13 +64,13 @@ export default function Navbar() {
       </div>
 
       {open ? (
-        <nav className="border-t border-brand-teal/10 bg-brand-ivory px-4 py-4 md:hidden">
+        <nav className="border-t border-brand-teal/10 bg-brand-ivory/95 px-4 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-md px-3 py-2 text-sm text-brand-slate hover:bg-brand-teal/10"
+                className="rounded-xl border border-brand-teal/10 bg-white px-3 py-2 text-sm text-brand-slate transition hover:border-brand-teal/20 hover:bg-brand-teal/5"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
@@ -81,7 +80,7 @@ export default function Navbar() {
               href={siteConfig.lineOaUrl}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md border border-brand-teal px-3 py-2 text-center text-sm text-brand-teal"
+              className="rounded-xl border border-brand-teal bg-brand-teal px-3 py-2 text-center text-sm font-medium text-white"
               onClick={() => setOpen(false)}
             >
               {siteConfig.cta.joinLine}
