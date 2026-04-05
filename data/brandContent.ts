@@ -1,9 +1,8 @@
 import { uploadedImages } from "@/data/uploadedImages";
 
 export const brandAssets = {
-  brandWordmark: uploadedImages.logoMarkDataUri,
-  brandLogo: uploadedImages.logoMarkDataUri,
-  philosophyImage: uploadedImages.logoWordmarkDataUri,
+  brandWordmark: uploadedImages.logoWordmarkDataUri,
+  philosophyDiagram: uploadedImages.logoMarkDataUri,
   products: {
     twistGlass: uploadedImages.twistGlassDataUri,
     purifier: uploadedImages.purifierDataUri,
