@@ -3,16 +3,16 @@ import { aboutPillars, aboutStory } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "品牌故事",
-  description: "認識微塵星海如何把祝福帶進日常，形成溫柔、穩定、可分享的陪伴。",
+  title: "品牌理念",
+  description: "理解微塵星海如何把 LINE、每日祝福、選品與陪伴整合成同一套品牌系統。",
 };
 
 export default function AboutPage() {
   return (
     <div className="mx-auto w-full max-w-5xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
-      <section className="rounded-3xl border border-brand-teal/10 bg-white p-8">
+      <section className="rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8">
         <p className="text-sm tracking-[0.18em] text-brand-teal">ABOUT WEICHEN XINGHAI</p>
-        <h1 className="mt-3 text-3xl font-semibold text-brand-deep">把祝福留在日常，而不是口號</h1>
+        <h1 className="mt-3 text-3xl font-semibold leading-tight text-brand-deep sm:text-4xl">微塵星海：把祝福變成可被日常接住的系統</h1>
         <div className="mt-6 space-y-4 text-sm leading-7 text-brand-slate sm:text-base">
           {aboutStory.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
@@ -29,19 +29,32 @@ export default function AboutPage() {
         ))}
       </section>
 
-      <section className="rounded-3xl border border-brand-gold/35 bg-[#fffdf8] p-8">
+      <section className="rounded-3xl border border-brand-gold/35 bg-[#fffdf8] p-6 sm:p-8">
+        <h2 className="text-2xl font-semibold text-brand-deep">我們如何看待「祝福儀式物」</h2>
+        <div className="mt-4 space-y-3 text-sm leading-7 text-brand-slate">
+          <p>
+            祝福儀式物不是一次性口號商品，而是能被抽取、收藏、送人的日常媒介。
+            它可以放進手機殼、書桌、床頭或包包，讓一句平安不只停留在當下。
+          </p>
+          <p>
+            這也是我們把 LINE、官網與選品整合的原因：先有每日內容的陪伴，再有可長期留下的器物承接，形成完整閉環。
+          </p>
+        </div>
+      </section>
+
+      <section className="rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8">
         <h2 className="text-2xl font-semibold text-brand-deep">我們的溝通原則</h2>
         <ul className="mt-4 space-y-2 text-sm leading-7 text-brand-slate">
           <li>• 不使用神效、開運保證等誇大語言。</li>
-          <li>• 只描述商品的設計、材質與真實使用情境。</li>
-          <li>• 保留留白與溫度，讓品牌像一份可以長期陪伴的日常禮物。</li>
+          <li>• 不做醫療暗示，只描述設計、材質與使用情境。</li>
+          <li>• 不以宗教壓迫口吻溝通，保留溫柔、留白與可選擇性。</li>
         </ul>
       </section>
 
-      <section className="rounded-3xl bg-brand-deep p-8 text-brand-ivory">
-        <h2 className="text-2xl font-semibold">想先體驗微塵星海的日常節奏？</h2>
+      <section className="rounded-3xl bg-brand-deep p-6 text-brand-ivory sm:p-8">
+        <h2 className="text-2xl font-semibold">想先感受微塵星海的日常節奏？</h2>
         <p className="mt-3 text-sm leading-7 text-[#d0d8d7]">
-          從加入 LINE 開始，先收下今日祝福，再慢慢找到最適合你的陪伴方式。
+          從 LINE 收下今日祝福開始，再慢慢找到最適合你與重要之人的陪伴方式。
         </p>
         <a
           href={siteConfig.lineOaUrl}
@@ -49,7 +62,7 @@ export default function AboutPage() {
           rel="noreferrer"
           className="mt-5 inline-flex rounded-full bg-brand-gold px-5 py-2 text-sm font-medium text-[#2d2207]"
         >
-          加入 LINE
+          {siteConfig.cta.joinLine}
         </a>
       </section>
     </div>

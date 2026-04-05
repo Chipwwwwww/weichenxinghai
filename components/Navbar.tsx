@@ -7,9 +7,9 @@ import { brandAssets } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
-  { href: "/", label: "首頁" },
-  { href: "/about", label: "品牌故事" },
-  { href: "/shop", label: "品牌選品" },
+  { href: "/", label: "品牌母站" },
+  { href: "/about", label: "品牌理念" },
+  { href: "/shop", label: "祝福選品" },
 ] as const;
 
 export default function Navbar() {
@@ -59,7 +59,7 @@ export default function Navbar() {
             rel="noreferrer"
             className="rounded-full border border-brand-teal px-4 py-2 text-xs font-medium text-brand-teal transition hover:bg-brand-teal hover:text-white"
           >
-            加入 LINE
+            {siteConfig.cta.joinLine}
           </a>
         </nav>
       </div>
@@ -84,7 +84,7 @@ export default function Navbar() {
               className="rounded-md border border-brand-teal px-3 py-2 text-center text-sm text-brand-teal"
               onClick={() => setOpen(false)}
             >
-              加入 LINE 領今日祝福
+              {siteConfig.cta.joinLine}
             </a>
           </div>
         </nav>
