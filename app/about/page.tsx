@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto w-full max-w-5xl space-y-8 px-4 py-16 sm:px-6 lg:px-8">
+    <div className="mx-auto w-full max-w-6xl space-y-8 px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <section className="rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8">
         <p className="text-sm tracking-[0.18em] text-brand-teal">ABOUT WEICHEN XINGHAI</p>
         <h1 className="mt-3 text-3xl font-semibold leading-tight text-brand-deep sm:text-4xl">微塵星海：把祝福變成可被日常接住的系統</h1>
@@ -22,7 +22,7 @@ export default function AboutPage() {
 
       <section className="grid gap-4 md:grid-cols-3">
         {aboutPillars.map((item) => (
-          <article key={item.title} className="rounded-3xl border border-brand-teal/15 bg-white p-6">
+          <article key={item.title} className="rounded-3xl border border-brand-teal/15 bg-white p-6 shadow-[0_8px_24px_rgba(16,34,36,0.04)]">
             <h2 className="text-xl font-semibold text-brand-deep">{item.title}</h2>
             <p className="mt-3 text-sm leading-7 text-brand-slate">{item.text}</p>
           </article>
@@ -51,7 +51,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="rounded-3xl bg-brand-deep p-6 text-brand-ivory sm:p-8">
+      <section className="rounded-3xl border border-brand-deep/30 bg-brand-deep p-6 text-brand-ivory sm:p-8">
         <h2 className="text-2xl font-semibold">想先感受微塵星海的日常節奏？</h2>
         <p className="mt-3 text-sm leading-7 text-[#d0d8d7]">
           從 LINE 收下今日祝福開始，再慢慢找到最適合你與重要之人的陪伴方式。
@@ -60,7 +60,7 @@ export default function AboutPage() {
           href={siteConfig.lineOaUrl}
           target="_blank"
           rel="noreferrer"
-          className="mt-5 inline-flex rounded-full bg-brand-gold px-5 py-2 text-sm font-medium text-[#2d2207]"
+          className="mt-5 inline-flex rounded-full bg-brand-gold px-5 py-2 text-sm font-medium text-[#2d2207] transition hover:brightness-95"
         >
           {siteConfig.cta.joinLine}
         </a>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function ShopPage() {
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <section className="rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8">
         <h1 className="text-3xl font-semibold text-brand-deep sm:text-4xl">祝福選品承接頁</h1>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-brand-slate sm:text-base">
@@ -36,7 +36,7 @@ export default function ShopPage() {
 
       <section className="mt-8 grid gap-6 lg:grid-cols-3">
         {products.map((product) => (
-          <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white">
+          <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white shadow-[0_10px_30px_rgba(16,34,36,0.05)] transition hover:-translate-y-0.5">
             <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f4ef]">
               <Image
                 src={product.image}
@@ -57,7 +57,7 @@ export default function ShopPage() {
                   <li key={bullet}>• {bullet}</li>
                 ))}
               </ul>
-              <p className="rounded-2xl bg-[#fcfbf7] px-4 py-3 text-xs leading-6 text-brand-slate">{product.useCases}</p>
+              <p className="rounded-2xl border border-brand-teal/10 bg-[#fcfbf7] px-4 py-3 text-xs leading-6 text-brand-slate">{product.useCases}</p>
               <a
                 href={siteConfig.lineOaUrl}
                 target="_blank"
@@ -85,7 +85,7 @@ export default function ShopPage() {
         </div>
       </section>
 
-      <section className="mt-10 rounded-2xl border border-brand-teal/10 bg-white p-5 text-sm leading-7 text-brand-slate">
+      <section className="mt-10 rounded-3xl border border-brand-teal/10 bg-white p-5 text-sm leading-7 text-brand-slate sm:p-6">
         我們目前以「官網介紹 + LINE 詢問」承接需求，不提供假結帳流程。
         所有文案僅描述設計靈感、外觀材質、使用情境與空間氛圍，不涉及醫療療效或未經證實之功能聲稱。
       </section>

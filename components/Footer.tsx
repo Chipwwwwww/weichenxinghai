@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-t border-brand-teal/10 bg-[#f6f4ec]">
       <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <p className="text-sm tracking-[0.16em] text-brand-teal">微塵星海｜品牌母站：理念 × LINE × 祝福選品</p>
-        <p className="mt-3 text-2xl font-semibold text-brand-deep">把祝福，變成每天都能傳遞的日常。</p>
+        <p className="mt-3 text-xl font-semibold text-brand-deep sm:text-2xl">把祝福，變成每天都能傳遞的日常。</p>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-brand-slate">
           官網承接品牌世界觀與選品內容，LINE 承接每日平安圖、靜心小語與開賣通知。
           讓祝福從接收、分享到生活陪伴，形成清楚而溫柔的閉環。

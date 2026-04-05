@@ -21,7 +21,7 @@ export default function HomePage() {
   return (
     <div className="bg-brand-ivory text-brand-ink">
       <section className="border-b border-brand-teal/10 bg-gradient-to-b from-brand-ivory to-[#f4f4ef]">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-24">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-20">
           <div className="space-y-6">
             <p className="text-sm tracking-[0.22em] text-brand-teal">微塵星海 WEICHEN XINGHAI</p>
             <h1 className="text-3xl font-semibold leading-tight text-brand-deep sm:text-5xl">
@@ -33,7 +33,7 @@ export default function HomePage() {
               微塵星海是一個把「平安圖、靜心小語、祝福傳遞」與「陪伴型生活選品」連成一體的品牌母站。
               你可以先從 LINE 收下今日祝福，再把心意送給重要的人，最後讓祝福留在生活場景裡。
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 pt-1">
               <a
                 href={siteConfig.lineOaUrl}
                 target="_blank"
@@ -51,8 +51,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="rounded-3xl border border-brand-teal/15 bg-white p-6 shadow-[0_20px_60px_rgba(16,34,36,0.08)]">
-            <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#f7f7f2]">
+          <div className="rounded-3xl border border-brand-teal/12 bg-white p-5 shadow-[0_16px_40px_rgba(16,34,36,0.06)] sm:p-6">
+            <div className="relative aspect-[16/11] overflow-hidden rounded-2xl bg-[#f7f7f2]">
               <Image
                 src={brandAssets.logoWordmark}
                 alt="微塵星海品牌識別"
@@ -72,7 +72,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
         <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-brand-gold/40 bg-[#f9f6ea] p-3 sm:p-4 md:p-5">
             <Image
@@ -86,7 +86,7 @@ export default function HomePage() {
             />
           </div>
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-brand-deep">品牌理念 / 世界觀</h2>
+            <h2 className="text-2xl font-semibold text-brand-deep sm:text-3xl">品牌理念 / 世界觀</h2>
             <p className="text-base leading-7 text-brand-slate">
               微塵星海不是在販售神秘功效，而是把祝福、平安與陪伴，轉成可被日常感知的形式。
             </p>
@@ -98,15 +98,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
         <div className="rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8">
-          <h2 className="text-3xl font-semibold text-brand-deep">祝福如何在微塵星海流動</h2>
+          <h2 className="text-2xl font-semibold text-brand-deep sm:text-3xl">祝福如何在微塵星海流動</h2>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-brand-slate sm:text-base">
             不是硬性的轉化流程，而是一條自然、可長期持續的陪伴路徑。
           </p>
           <div className="mt-7 grid gap-4 md:grid-cols-2">
             {blessingFlow.map((item, index) => (
-              <article key={item.title} className="rounded-2xl border border-brand-teal/10 bg-[#fcfbf7] p-5">
+              <article key={item.title} className="rounded-2xl border border-brand-teal/10 bg-[#fcfbf7] p-5 shadow-[0_4px_18px_rgba(16,34,36,0.03)]">
                 <p className="text-xs tracking-[0.16em] text-brand-teal">0{index + 1}</p>
                 <h3 className="mt-2 text-xl font-semibold text-brand-deep">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-brand-slate">{item.text}</p>
@@ -116,11 +116,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
         <div className="grid gap-6 rounded-3xl border border-brand-gold/35 bg-[#fffdf8] p-6 sm:p-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
             <p className="text-xs tracking-[0.16em] text-brand-teal">DAILY BLESSING PREVIEW</p>
-            <h2 className="mt-2 text-3xl font-semibold text-brand-deep">每日祝福體驗預覽</h2>
+            <h2 className="mt-2 text-2xl font-semibold text-brand-deep sm:text-3xl">每日祝福體驗預覽</h2>
             <p className="mt-4 text-sm leading-7 text-brand-slate sm:text-base">
               你會在 LINE 看到平安圖、靜心小語與祝福互動。這裡先展示體驗節奏，幫你快速理解內容樣貌。
             </p>
@@ -149,15 +149,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-brand-deep">精選選品｜把祝福留在生活場景</h2>
+      <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
+        <h2 className="text-2xl font-semibold text-brand-deep sm:text-3xl">精選選品｜把祝福留在生活場景</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-brand-slate sm:text-base">
           保留真實商品圖，依照自用、送禮與空間情境，整理成可被理解與延伸的陪伴型選品。
         </p>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-3">
           {products.map((product) => (
-            <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white">
+            <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/10 bg-white shadow-[0_10px_30px_rgba(16,34,36,0.05)] transition hover:-translate-y-0.5">
               <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f4ef]">
                 <Image
                   src={product.image}
@@ -193,9 +193,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
         <div className="rounded-3xl border border-brand-gold/35 bg-[#fffdf8] p-6 sm:p-8">
-          <h2 className="text-3xl font-semibold text-brand-deep">祝福儀式物</h2>
+          <h2 className="text-2xl font-semibold text-brand-deep sm:text-3xl">祝福儀式物</h2>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-brand-slate sm:text-base">
             它不是普通文創卡，而是讓祝福可以被抽取、收藏、送出與看見的日常儀式設計。
           </p>
@@ -209,9 +209,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+      <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
         <div className="rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8">
-          <h2 className="text-3xl font-semibold text-brand-deep">信任與常見問題</h2>
+          <h2 className="text-2xl font-semibold text-brand-deep sm:text-3xl">信任與常見問題</h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {trustItems.map((item) => (
               <div key={item} className="rounded-xl border border-brand-teal/15 bg-[#fcfbf7] px-4 py-3 text-sm leading-7 text-brand-slate">
