@@ -54,7 +54,7 @@ export default function HomePage() {
           <div className="rounded-3xl border border-brand-teal/12 bg-white p-5 shadow-[0_16px_40px_rgba(16,34,36,0.06)] sm:p-6">
             <div className="relative aspect-[16/11] overflow-hidden rounded-2xl bg-[#f7f7f2]">
               <Image
-                src={brandAssets.logoWordmark}
+                src={brandAssets.brandWordmark}
                 alt="微塵星海品牌識別"
                 loading="eager"
                 decoding="async"
@@ -72,11 +72,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+      <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-brand-gold/40 bg-[#f9f6ea] p-3 sm:p-4 md:p-5">
+          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-brand-gold/35 bg-[#f7f5eb] p-4 sm:p-5 md:p-6">
             <Image
-              src={brandAssets.logoMark}
+              src={brandAssets.philosophyImage}
               alt="微塵星海祝福流轉理念圖"
               loading="lazy"
               decoding="async"
