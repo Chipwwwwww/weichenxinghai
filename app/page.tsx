@@ -58,7 +58,7 @@ export default function HomePage() {
                 alt="微塵星海品牌識別"
                 loading="eager"
                 decoding="async"
-                className="absolute inset-0 h-full w-full object-contain p-6"
+                className="absolute inset-0 h-full w-full object-contain p-4 sm:p-6"
                 fill
                 sizes="(max-width: 1024px) 90vw, 420px"
               />
@@ -74,16 +74,18 @@ export default function HomePage() {
 
       <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-brand-gold/35 bg-[#f7f5eb] p-4 sm:p-5 md:p-6">
-            <Image
-              src={brandAssets.philosophyImage}
-              alt="微塵星海祝福流轉理念圖"
-              loading="lazy"
-              decoding="async"
-              className="block h-auto w-full object-contain"
-              width={900}
-              height={900}
-            />
+          <div className="mx-auto flex w-full max-w-[560px] items-center justify-center overflow-hidden rounded-2xl border border-brand-gold/35 bg-[#f7f5eb] p-2 sm:p-4 md:p-5">
+            <div className="w-[86%] sm:w-[90%]">
+              <Image
+                src={brandAssets.philosophyDiagram}
+                alt="微塵星海祝福流轉理念圖"
+                loading="lazy"
+                decoding="async"
+                className="block h-auto w-full object-contain"
+                width={900}
+                height={900}
+              />
+            </div>
           </div>
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-brand-deep sm:text-3xl">品牌理念 / 世界觀</h2>
