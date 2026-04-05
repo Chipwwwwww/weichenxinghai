@@ -1,53 +1,73 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  brandAssets,
-  dailyBlessingPreview,
-  faqItems,
-  homeSteps,
-  homeTrustItems,
-  products,
-  ritualMoments,
-} from "@/data/brandContent";
+import { brandAssets, faqItems, products } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "首頁",
-  description: "微塵星海官網：認識品牌、預覽每日祝福體驗，並加入 LINE 展開日常陪伴。",
+  description: "微塵星海把祝福、平安與陪伴，轉為日常可分享的生活選品與靜心內容。",
 };
+
+const values = [
+  {
+    title: "平安",
+    short: "把心安落在日常節奏。",
+    detail:
+      "我們相信平安不只是一個願望，也能是一句問候、一張平安圖，或一個讓你願意慢下來的生活片刻。",
+  },
+  {
+    title: "祝福",
+    short: "把心意送到重要的人身邊。",
+    detail:
+      "微塵星海把想說卻不容易說出口的關心，變成可分享、可傳遞、也能陪伴生活的日常形式。",
+  },
+  {
+    title: "淨感",
+    short: "讓空間更清爽，也更容易停留。",
+    detail:
+      "從桌面、玄關到床邊角落，以香氣、器物與設計語言，打造柔和有序的生活氛圍。",
+  },
+] as const;
+
+const trustItems = [
+  "台灣出貨與客服回覆資訊透明",
+  "文案聚焦材質、設計與使用情境",
+  "新品與開賣通知統一由 LINE 提供",
+  "先理解品牌，再決定是否詢問與收藏",
+] as const;
 
 export default function HomePage() {
   return (
     <div className="bg-brand-ivory text-brand-ink">
-      <section className="border-b border-brand-teal/10 bg-gradient-to-b from-brand-ivory to-[#f3f4ef]">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-24">
+      <section className="border-b border-brand-teal/10 bg-gradient-to-b from-brand-ivory to-[#f4f4ef]">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-24">
           <div className="space-y-6">
             <p className="text-sm tracking-[0.22em] text-brand-teal">微塵星海 WEICHEN XINGHAI</p>
-            <h1 className="text-4xl font-semibold leading-tight text-brand-deep sm:text-5xl">
+            <h1 className="text-3xl font-semibold leading-tight text-brand-deep sm:text-5xl">
               把祝福，
               <br />
               變成每天都能傳遞的日常。
             </h1>
             <p className="max-w-xl text-base leading-7 text-brand-slate sm:text-lg">
-              先在官網理解品牌與選品，再到 LINE 領取今日平安圖與靜心小語。你也可以把祝福轉給想照顧的人，
-              讓心意真的流動起來。
+              微塵星海結合每日祝福、靜心內容與禪意生活選品，讓一句平安、一份香氣、一個更舒服的空間，
+              都成為陪伴自己與家人的日常方式。
             </p>
             <div className="flex flex-wrap gap-3">
+              <Link
+                href="/shop"
+                className="rounded-full bg-brand-teal px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f5a54]"
+              >
+                查看選品
+              </Link>
               <a
                 href={siteConfig.lineOaUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full bg-brand-teal px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1f5a54]"
+                className="rounded-full border border-brand-gold/60 bg-white px-6 py-3 text-sm font-medium text-brand-deep transition hover:bg-brand-gold/15"
               >
                 {siteConfig.cta.joinLine}
               </a>
-              <Link
-                href="/shop"
-                className="rounded-full border border-brand-gold/60 bg-white px-6 py-3 text-sm font-medium text-brand-deep transition hover:bg-brand-gold/15"
-              >
-                {siteConfig.cta.exploreShop}
-              </Link>
             </div>
           </div>
 
@@ -63,92 +83,49 @@ export default function HomePage() {
                 sizes="(max-width: 1024px) 90vw, 420px"
               />
             </div>
-            <ul className="mt-4 space-y-2 text-sm text-brand-slate">
-              <li>• 每日祝福：平安圖＋靜心小語</li>
-              <li>• 祝福互動：可收藏、可分享、可點亮</li>
-              <li>• 選品承接：把陪伴感帶進你的空間</li>
-            </ul>
+            <p className="mt-4 text-sm leading-6 text-brand-slate">
+              願你心安，也願你把這份平安送給重要的人。
+              <br />
+              從一念祝福，到一份陪伴生活的安定。
+            </p>
           </div>
         </div>
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-brand-deep">三步驟開始微塵星海</h2>
-        <div className="mt-8 grid gap-5 md:grid-cols-3">
-          {homeSteps.map((step, index) => (
-            <article key={step.title} className="rounded-2xl border border-brand-teal/10 bg-white p-6">
-              <p className="text-sm font-medium text-brand-teal">STEP {index + 1}</p>
-              <h3 className="mt-2 text-xl font-semibold text-brand-deep">{step.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-brand-slate">{step.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-8 lg:grid-cols-2">
+        <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-brand-gold/40 bg-[#f9f6ea] p-3 sm:p-4 md:p-5">
+            <Image
+              src={brandAssets.logoMark}
+              alt="微塵星海祝福流轉理念圖"
+              loading="lazy"
+              decoding="async"
+              className="block h-auto w-full object-contain"
+              width={900}
+              height={900}
+            />
+          </div>
           <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-brand-deep">每日祝福體驗預覽</h2>
-            <p className="text-sm leading-7 text-brand-slate">
-              以下為體驗示意，實際內容會在 LINE 官方帳號每日更新，不提供即時社群數據承諾。
+            <h2 className="text-3xl font-semibold text-brand-deep">品牌理念</h2>
+            <p className="text-base leading-7 text-brand-slate">
+              微塵星海不是在賣神秘功效，而是在把祈願、平安與陪伴，轉成日常可感知的生活形式。
             </p>
-            <div className="rounded-2xl border border-brand-gold/35 bg-[#fffdf8] p-5">
-              <p className="text-xs tracking-[0.15em] text-brand-teal">{dailyBlessingPreview.imageTitle}</p>
-              <p className="mt-2 text-lg font-semibold text-brand-deep">{dailyBlessingPreview.imageSubtitle}</p>
-            </div>
-            <blockquote className="rounded-2xl border border-brand-teal/10 bg-[#f6f8f7] p-5 text-sm leading-7 text-brand-slate">
-              {dailyBlessingPreview.quote}
-            </blockquote>
-          </div>
-
-          <div className="space-y-4">
-            <div className="rounded-2xl border border-brand-teal/10 bg-[#f9fbfa] p-5">
-              <p className="text-sm font-medium text-brand-deep">{dailyBlessingPreview.sharePrompt}</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {dailyBlessingPreview.blessingOptions.map((option) => (
-                  <span key={option} className="rounded-full border border-brand-teal/20 px-3 py-1 text-xs text-brand-slate">
-                    {option}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-2xl border border-brand-teal/10 bg-white p-5">
-              <p className="text-sm font-medium text-brand-deep">看看大家近期點亮的祝福（示意）</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {dailyBlessingPreview.litExamples.map((example) => (
-                  <span key={example} className="rounded-full bg-brand-teal/10 px-3 py-1 text-xs text-brand-teal">
-                    {example}
-                  </span>
-                ))}
-              </div>
-              <p className="mt-3 text-xs leading-6 text-brand-slate">{dailyBlessingPreview.communityNote}</p>
-            </div>
+            <p className="text-base leading-7 text-brand-slate">
+              平安不一定是宏大的願望，也可以是一張圖片、一句話、一份香氣，或一個更舒服的空間。
+              我們希望把想送給家人朋友的心意，慢慢變成看得見、分享得出去、也陪伴生活的日常。
+            </p>
           </div>
         </div>
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-brand-teal/10 bg-white p-8">
-          <h2 className="text-3xl font-semibold text-brand-deep">我們做的不是神效，而是可持續的陪伴</h2>
-          <p className="mt-3 text-sm leading-7 text-brand-slate">
-            微塵星海不做神秘保證，也不販售焦慮。我們把祝福、空間與送禮心意做成可被使用的日常：一張卡、一句話、一件器物。
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/about" className="text-sm font-medium text-brand-teal hover:text-[#1f5a54]">
-              {siteConfig.cta.learnBrand} →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-semibold text-brand-deep">祝福儀式物，讓心意被看見</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {ritualMoments.map((item) => (
-            <article key={item.title} className="rounded-2xl border border-brand-teal/10 bg-white p-5">
-              <h3 className="text-lg font-semibold text-brand-deep">{item.title}</h3>
-              <p className="mt-2 text-sm leading-7 text-brand-slate">{item.description}</p>
+        <h2 className="text-3xl font-semibold text-brand-deep">三大價值</h2>
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          {values.map((value) => (
+            <article key={value.title} className="rounded-2xl border border-brand-teal/10 bg-white p-6">
+              <h3 className="text-2xl font-semibold text-brand-teal">{value.title}</h3>
+              <p className="mt-3 text-sm font-medium text-brand-deep">{value.short}</p>
+              <p className="mt-4 text-sm leading-7 text-brand-slate">{value.detail}</p>
             </article>
           ))}
         </div>
@@ -157,11 +134,11 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl font-semibold text-brand-deep">精選選品</h2>
-            <p className="mt-2 text-sm text-brand-slate">選出能放進日常的陪伴型選品，先了解，再決定是否加入開賣通知。</p>
+            <h2 className="text-3xl font-semibold text-brand-deep">精選商品</h2>
+            <p className="mt-2 text-sm text-brand-slate">三款以禪意設計、香氣陪伴與空間淨感為核心的生活選品。</p>
           </div>
           <Link href="/shop" className="text-sm font-medium text-brand-teal hover:text-[#1f5a54]">
-            查看完整選品頁
+            查看完整商品頁
           </Link>
         </div>
 
@@ -183,7 +160,12 @@ export default function HomePage() {
                 <p className="text-xs tracking-[0.16em] text-brand-teal">{product.tagline}</p>
                 <h3 className="text-xl font-semibold text-brand-deep">{product.name}</h3>
                 <p className="text-sm leading-7 text-brand-slate">{product.description}</p>
-                <p className="text-xs text-brand-slate">{product.useCase}</p>
+                <ul className="space-y-2 text-sm text-brand-slate">
+                  {product.bullets.map((bullet) => (
+                    <li key={bullet}>• {bullet}</li>
+                  ))}
+                </ul>
+                <p className="text-xs text-brand-slate">{product.useCases}</p>
                 <a
                   href={siteConfig.lineOaUrl}
                   target="_blank"
@@ -200,13 +182,12 @@ export default function HomePage() {
 
       <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="rounded-3xl border border-brand-gold/40 bg-[#fffdf8] p-8">
-          <h2 className="text-3xl font-semibold text-brand-deep">信任與常見問題</h2>
-          <div className="mt-6 grid gap-3 md:grid-cols-3">
-            {homeTrustItems.map((item) => (
-              <article key={item.q} className="rounded-xl border border-brand-teal/15 bg-white px-4 py-4">
-                <h3 className="text-sm font-medium text-brand-deep">{item.q}</h3>
-                <p className="mt-2 text-sm leading-7 text-brand-slate">{item.a}</p>
-              </article>
+          <h2 className="text-3xl font-semibold text-brand-deep">安心與常見問題</h2>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {trustItems.map((item) => (
+              <div key={item} className="rounded-xl border border-brand-teal/15 bg-white px-4 py-3 text-sm text-brand-slate">
+                {item}
+              </div>
             ))}
           </div>
 
@@ -217,31 +198,6 @@ export default function HomePage() {
                 <p className="pt-3 text-sm leading-7 text-brand-slate">{item.a}</p>
               </details>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-brand-deep p-8 text-brand-ivory">
-          <h2 className="text-3xl font-semibold">今天就把第一份祝福收下來</h2>
-          <p className="mt-3 max-w-3xl text-sm leading-7 text-[#d0d8d7]">
-            加入 LINE 後，先領取今日平安圖與靜心小語；再從你喜歡的方式開始：收藏、分享，或點亮一份祝福。
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <a
-              href={siteConfig.lineOaUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full bg-brand-gold px-6 py-3 text-sm font-medium text-[#2d2207] transition hover:brightness-105"
-            >
-              {siteConfig.cta.joinLine}
-            </a>
-            <Link
-              href="/shop"
-              className="rounded-full border border-white/35 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-            >
-              先看選品，再決定是否詢問
-            </Link>
           </div>
         </div>
       </section>
