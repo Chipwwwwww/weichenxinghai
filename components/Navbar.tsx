@@ -1,14 +1,16 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { brandAssets } from "@/data/brandContent";
+import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
   { href: "/", label: "首頁" },
-  { href: "/about", label: "品牌理念" },
-  { href: "/shop", label: "商品選品" },
-];
+  { href: "/about", label: "品牌故事" },
+  { href: "/shop", label: "選品" },
+] as const;
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -18,12 +20,14 @@ export default function Navbar() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
           <span className="relative h-8 w-8 overflow-hidden rounded-full border border-brand-gold/40 bg-white">
-            <img
+            <Image
               src={brandAssets.logoMark}
               alt="微塵星海 logo"
               loading="eager"
               decoding="async"
               className="absolute inset-0 h-full w-full object-contain p-1"
+              fill
+              sizes="32px"
             />
           </span>
           <span className="text-sm font-medium tracking-[0.18em] text-brand-deep">微塵星海</span>
@@ -47,10 +51,12 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="#line-oa"
+            href={siteConfig.lineOaUrl}
+            target="_blank"
+            rel="noreferrer"
             className="rounded-full border border-brand-teal px-4 py-2 text-xs font-medium text-brand-teal transition hover:bg-brand-teal hover:text-white"
           >
-            加入 LINE
+            {siteConfig.cta.joinLine}
           </a>
         </nav>
       </div>
@@ -69,11 +75,13 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="#line-oa"
+              href={siteConfig.lineOaUrl}
+              target="_blank"
+              rel="noreferrer"
               className="rounded-md border border-brand-teal px-3 py-2 text-center text-sm text-brand-teal"
               onClick={() => setOpen(false)}
             >
-              加入 LINE 領今日平安圖
+              {siteConfig.cta.joinLine}
             </a>
           </div>
         </nav>
