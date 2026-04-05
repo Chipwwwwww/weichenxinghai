@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { brandAssets } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
@@ -9,7 +9,7 @@ import { siteConfig } from "@/data/siteConfig";
 const navItems = [
   { href: "/", label: "首頁" },
   { href: "/about", label: "品牌故事" },
-  { href: "/shop", label: "選品" },
+  { href: "/shop", label: "品牌選品" },
 ] as const;
 
 export default function Navbar() {
@@ -35,13 +35,16 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md border border-brand-teal/30 p-2 text-brand-deep md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-brand-teal/30 text-brand-deep md:hidden"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="切換選單"
           aria-expanded={open}
         >
-          <span className="block h-0.5 w-5 bg-current" />
-          <span className="ml-1 block h-0.5 w-5 bg-current" />
+          <span className="space-y-1.5">
+            <span className="block h-0.5 w-5 bg-current" />
+            <span className="block h-0.5 w-5 bg-current" />
+            <span className="block h-0.5 w-5 bg-current" />
+          </span>
         </button>
 
         <nav className="hidden items-center gap-8 text-sm text-brand-slate md:flex">
@@ -56,7 +59,7 @@ export default function Navbar() {
             rel="noreferrer"
             className="rounded-full border border-brand-teal px-4 py-2 text-xs font-medium text-brand-teal transition hover:bg-brand-teal hover:text-white"
           >
-            {siteConfig.cta.joinLine}
+            加入 LINE
           </a>
         </nav>
       </div>
@@ -81,7 +84,7 @@ export default function Navbar() {
               className="rounded-md border border-brand-teal px-3 py-2 text-center text-sm text-brand-teal"
               onClick={() => setOpen(false)}
             >
-              {siteConfig.cta.joinLine}
+              加入 LINE 領今日祝福
             </a>
           </div>
         </nav>
