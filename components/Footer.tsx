@@ -5,18 +5,19 @@ export default function Footer() {
   return (
     <footer className="border-t border-brand-teal/10 bg-[#f6f4ec]">
       <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <p className="text-sm tracking-[0.16em] text-brand-teal">微塵星海｜每日祝福與靜心生活</p>
+        <p className="text-sm tracking-[0.16em] text-brand-teal">微塵星海｜品牌母站：理念 × LINE × 祝福選品</p>
         <p className="mt-3 text-2xl font-semibold text-brand-deep">把祝福，變成每天都能傳遞的日常。</p>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-brand-slate">
-          官網承接品牌理念與選品內容，LINE 承接每日祝福與通知。保持簡單、真實、可長期陪伴。
+          官網承接品牌世界觀與選品內容，LINE 承接每日平安圖、靜心小語與開賣通知。
+          讓祝福從接收、分享到生活陪伴，形成清楚而溫柔的閉環。
         </p>
 
         <div className="mt-6 flex flex-wrap gap-5 text-sm text-brand-slate">
           <Link href="/about" className="hover:text-brand-teal">
-            品牌故事
+            品牌理念
           </Link>
           <Link href="/shop" className="hover:text-brand-teal">
-            品牌選品
+            祝福選品
           </Link>
           <a href={siteConfig.lineOaUrl} target="_blank" rel="noreferrer" className="hover:text-brand-teal">
             LINE 官方帳號
