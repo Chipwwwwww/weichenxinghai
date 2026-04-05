@@ -3,10 +3,10 @@
 @theme inline {
   --color-brand-ivory: #f7f5ef;
   --color-brand-ink: #1f2a2c;
-  --color-brand-deep: #132628;
-  --color-brand-teal: #2e6d66;
-  --color-brand-slate: #4f6264;
-  --color-brand-gold: #c8a35a;
+  --color-brand-deep: #102224;
+  --color-brand-teal: #1f5f58;
+  --color-brand-slate: #34484b;
+  --color-brand-gold: #b99348;
   --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
 }
 
@@ -16,17 +16,38 @@ body {
   color: #1f2a2c;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+p,
+li,
+summary,
+label,
+input,
+textarea,
+button,
+a {
+  font-size: 1rem;
 }
 
 .glass-nav {
-  background: rgba(247, 245, 239, 0.9);
+  background: rgba(247, 245, 239, 0.97);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(46, 109, 102, 0.12);
+  border-bottom: 1px solid rgba(31, 95, 88, 0.2);
+}
+
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
 }
 
 ::selection {
-  background: rgba(46, 109, 102, 0.16);
+  background: rgba(31, 95, 88, 0.22);
 }
