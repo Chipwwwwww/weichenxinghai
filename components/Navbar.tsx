@@ -19,15 +19,15 @@ export default function Navbar() {
     <header className="glass-nav fixed inset-x-0 top-0 z-50">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="relative h-8 w-36 overflow-hidden rounded-md bg-transparent sm:w-44">
+          <span className="relative h-8 w-32 overflow-hidden rounded-md bg-transparent sm:h-9 sm:w-40">
             <Image
-              src={brandAssets.logoWordmark}
+              src={brandAssets.brandWordmark}
               alt="微塵星海品牌識別"
               loading="eager"
               decoding="async"
               className="absolute inset-0 h-full w-full object-contain"
               fill
-              sizes="(max-width: 640px) 144px, 176px"
+              sizes="(max-width: 640px) 128px, 160px"
             />
           </span>
         </Link>
