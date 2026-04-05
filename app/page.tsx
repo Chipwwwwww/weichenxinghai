@@ -89,13 +89,13 @@ export default function HomePage() {
 
       <section className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-8 rounded-3xl border border-brand-teal/10 bg-white p-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative mx-auto aspect-[4/3] w-full max-w-[420px] overflow-hidden rounded-2xl border border-brand-gold/40 bg-[#f9f6ea]">
+          <div className="mx-auto w-full max-w-[560px] overflow-hidden rounded-2xl border border-brand-gold/40 bg-[#f9f6ea] p-3 sm:p-4 md:p-5">
             <img
               src={brandAssets.logoMark}
               alt="微塵星海祝福流轉理念圖"
               loading="lazy"
               decoding="async"
-              className="absolute inset-0 h-full w-full object-contain p-4 sm:p-6"
+              className="block h-auto w-full object-contain"
             />
           </div>
           <div className="space-y-4">
