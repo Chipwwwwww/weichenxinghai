@@ -4,9 +4,11 @@ export const brandAssets = {
   brandWordmark: uploadedImages.logoWordmarkDataUri,
   philosophyDiagram: uploadedImages.logoMarkDataUri,
   products: {
-    twistGlass: "/brand/product-twist-glass.svg",
-    purifier: "/brand/product-air-purifier.svg",
-    aromaCup: "/brand/product-aroma-cup.svg",
+    // 商品主圖為鎖定資產：文案任務不得替換、不得改來源、不得改成 SVG/placeholder/illustration。
+    // Product photo sources are locked. Copy-only changes must never modify these image URIs.
+    twistGlass: uploadedImages.twistGlassDataUri,
+    purifier: uploadedImages.purifierDataUri,
+    aromaCup: uploadedImages.aromaCupDataUri,
   },
 } as const;
 
