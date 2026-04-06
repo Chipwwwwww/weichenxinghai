@@ -7,8 +7,8 @@ import { brandAssets } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
-  { href: "/", label: "首頁" },
-  { href: "/about", label: "品牌介紹" },
+  { href: "/", label: "品牌首頁" },
+  { href: "/about", label: "品牌理念" },
   { href: "/shop", label: "祝福選品" },
 ] as const;
 
@@ -46,7 +46,7 @@ export default function Navbar() {
           </span>
         </button>
 
-        <nav className="hidden items-center gap-7 text-base text-brand-slate md:flex">
+        <nav className="hidden items-center gap-8 text-base text-brand-slate md:flex">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="tap-target transition hover:text-brand-teal">
               {item.label}
@@ -56,7 +56,7 @@ export default function Navbar() {
             href={siteConfig.lineOaUrl}
             target="_blank"
             rel="noreferrer"
-            className="tap-target rounded-full border-2 border-brand-teal/80 px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
+            className="tap-target rounded-full border-2 border-brand-teal/75 px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
           >
             {siteConfig.cta.joinLine}
           </a>
@@ -64,7 +64,7 @@ export default function Navbar() {
       </div>
 
       {open ? (
-        <nav className="border-t border-brand-teal/15 bg-brand-ivory px-4 py-4 md:hidden">
+        <nav className="border-t border-brand-teal/15 bg-brand-ivory/95 px-4 py-4 md:hidden">
           <div className="flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
@@ -85,7 +85,7 @@ export default function Navbar() {
             >
               {siteConfig.cta.joinLine}
             </a>
-            <p className="text-base text-brand-slate">點擊後即可用 LINE 收到每日平安圖與靜心小語。</p>
+            <p className="text-base text-brand-slate">加入後每天都會收到平安圖與靜心小語，想看再看，不造成壓力。</p>
           </div>
         </nav>
       ) : null}
