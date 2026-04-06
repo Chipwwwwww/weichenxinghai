@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "微塵星海｜把祝福變成每天都能傳遞的日常",
+    default: "微塵星海｜把祝福，變成每天都能傳遞的日常。",
     template: "%s｜微塵星海",
   },
   description:
-    "微塵星海以官網承接品牌與選品，並導向 LINE 官方帳號提供每日平安圖、靜心小語與祝福互動。",
+    "微塵星海是一個以佛教祝福、靜心陪伴與禪意生活為核心的品牌；加入 LINE 領今日祝福，並看看可自用也可送禮的禪意選品。",
 };
 
 export default function RootLayout({
