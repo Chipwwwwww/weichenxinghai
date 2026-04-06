@@ -6,7 +6,7 @@ export const siteConfig = {
     joinLine: "加入 LINE 領今日祝福",
     askLine: "LINE 一鍵詢問",
     notifyLine: "加入 LINE 了解開賣通知",
-    exploreShop: "查看價格與規格",
+    exploreShop: "查看選品",
     learnBrand: "了解品牌理念",
   },
 } as const;

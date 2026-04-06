@@ -8,16 +8,17 @@ const sceneTags = ["自用陪伴", "送禮心意", "家人 / 長輩 / 朋友", "
 
 export const metadata: Metadata = {
   title: "祝福選品",
-  description: "清楚查看微塵星海選品的價格、規格、用途與送禮情境，再透過 LINE 一鍵詢問。",
+  description: "保留情境感與品牌質地，同時清楚呈現微塵星海選品的價格、規格、用途與適合對象。",
 };
 
 export default function ShopPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <section className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
-        <h1 className="text-4xl font-semibold text-brand-deep sm:text-5xl">祝福選品：先看懂，再決定</h1>
+        <h1 className="text-4xl font-semibold text-brand-deep sm:text-5xl">祝福選品：把心意留在可看見的日常裡</h1>
         <p className="mt-3 max-w-3xl text-lg leading-8 text-brand-slate">
-          每件商品都整理好白話用途、參考價格、規格與送禮建議。看完有興趣，再用 LINE 一鍵詢問，不需要複雜操作。
+          這裡保留微塵星海原本的情境感，也把資訊寫得更清楚：價格、規格、適合誰、適合放哪裡，
+          讓你先看懂，再決定是否用 LINE 詢問。
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {sceneTags.map((tag) => (
@@ -47,14 +48,14 @@ export default function ShopPage() {
               <h2 className="text-2xl font-semibold text-brand-deep">{product.name}</h2>
               <p className="text-base text-brand-slate">{product.subtitle}</p>
               <p className="text-base leading-8 text-brand-slate">{product.description}</p>
-              <ul className="space-y-2 text-base text-brand-slate">
-                <li>• {product.price}</li>
-                <li>• {product.specs}</li>
-                <li>• {product.placement}</li>
-                <li>• {product.audience}</li>
-                <li>• {product.usage}</li>
+              <ul className="space-y-2 rounded-2xl border border-brand-teal/15 bg-[#fcfbf7] px-4 py-3 text-base leading-8 text-brand-slate">
+                <li>{product.price}</li>
+                <li>{product.specs}</li>
+                <li>{product.placement}</li>
+                <li>{product.audience}</li>
+                <li>{product.usage}</li>
               </ul>
-              <p className="rounded-2xl border border-brand-teal/15 bg-[#fcfbf7] px-4 py-3 text-base leading-8 text-brand-slate">{product.useCases}</p>
+              <p className="rounded-2xl border border-brand-gold/35 bg-[#fffdf8] px-4 py-3 text-base leading-8 text-brand-slate">{product.useCases}</p>
               <a
                 href={siteConfig.lineOaUrl}
                 target="_blank"
