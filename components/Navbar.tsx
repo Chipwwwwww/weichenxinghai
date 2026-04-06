@@ -8,8 +8,8 @@ import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
   { href: "/", label: "品牌首頁" },
-  { href: "/about", label: "品牌理念" },
-  { href: "/shop", label: "祝福選品" },
+  { href: "/about", label: "了解微塵星海" },
+  { href: "/shop", label: "看看禪意選品" },
 ] as const;
 
 export default function Navbar() {
@@ -53,7 +53,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href={siteConfig.lineOaUrl}
+            href={siteConfig.lineBlessingUrl}
             target="_blank"
             rel="noreferrer"
             className="tap-target rounded-full border-2 border-brand-teal/75 px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
@@ -77,7 +77,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href={siteConfig.lineOaUrl}
+              href={siteConfig.lineBlessingUrl}
               target="_blank"
               rel="noreferrer"
               className="tap-target rounded-xl border border-brand-teal bg-brand-teal px-4 py-3 text-center text-base font-semibold text-white"
@@ -85,7 +85,7 @@ export default function Navbar() {
             >
               {siteConfig.cta.joinLine}
             </a>
-            <p className="text-base text-brand-slate">加入後每天都會收到平安圖與靜心小語，想看再看，不造成壓力。</p>
+            <p className="text-base text-brand-slate">加入後可領今日平安圖、今日靜心小語，也能看看大家點亮了什麼。</p>
           </div>
         </nav>
       ) : null}
