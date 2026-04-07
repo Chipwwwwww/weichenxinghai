@@ -21,7 +21,8 @@ export const products = [
     description:
       "以光影流動與安定停留感為靈感，適合晨起、夜晚、閱讀、喝茶或安靜獨處時使用，讓日常補水也帶著溫柔節奏。",
     image: brandAssets.products.twistGlass,
-    price: "參考價格：NT$680",
+    price: "NT$1,000",
+    crossedPrice: "NT$888",
     specs: "材質 / 規格：耐熱玻璃，容量約 320ml",
     placement: "適合情境：晨起喝水、夜晚喝茶、閱讀停留片刻",
     audience: "適合對象：自用、送朋友、送家人、送長輩",
@@ -42,7 +43,8 @@ export const products = [
     description:
       "適合書桌、床邊、閱讀區與供桌周邊等小空間。很多人誦念、焚香後，小範圍空間更容易留下較明顯香氣與煙味，這款更不占位、好移動，也更容易融入原本的禪意空間。",
     image: brandAssets.products.purifier,
-    price: "參考價格：NT$1,680",
+    price: "NT$5,000",
+    crossedPrice: "NT$3,680",
     specs: "材質 / 規格：ABS 機身，USB 供電，小型桌面尺寸",
     placement: "適合情境：供桌旁、書桌邊、床邊、閱讀區",
     audience: "適合對象：自用、送家人、送長輩、送同事",
@@ -63,7 +65,8 @@ export const products = [
     description:
       "內含天然木炭與香氛設計，適合放在床頭、書桌、玄關與靜心角落。不是張揚濃烈的路線，而是讓空間維持沉穩、內斂、可長期陪伴的感受。",
     image: brandAssets.products.aromaCup,
-    price: "參考價格：NT$980",
+    price: "NT$3,000",
+    crossedPrice: "NT$1,980",
     specs: "材質 / 規格：陶瓷杯體，天然木炭與香氛設計",
     placement: "適合情境：床頭、書桌、玄關、靜心角落",
     audience: "適合對象：自用、送朋友、送家人、送長輩",

@@ -49,7 +49,9 @@ export default function ShopPage() {
               <p className="text-base text-brand-slate">{product.subtitle}</p>
               <p className="text-base leading-8 text-brand-slate">{product.description}</p>
               <ul className="space-y-2 rounded-2xl border border-brand-teal/15 bg-[#fcfbf7] px-4 py-3 text-base leading-8 text-brand-slate">
-                <li>{product.price}</li>
+                <li>
+                  價格：{product.price} <span className="text-brand-slate/70 line-through">{product.crossedPrice}</span>
+                </li>
                 <li>{product.specs}</li>
                 <li>{product.placement}</li>
                 <li>{product.audience}</li>
