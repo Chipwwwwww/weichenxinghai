@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { PriceDisplay } from "@/components/shared/PriceDisplay";
+import { ProductJsonLd } from "@/components/shared/ProductJsonLd";
 import { products, ritualItems } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
 
@@ -14,6 +16,7 @@ export const metadata: Metadata = {
 export default function ShopPage() {
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
+      <ProductJsonLd products={products} />
       <section className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
         <h1 className="text-4xl font-semibold text-brand-deep sm:text-5xl">看看禪意選品</h1>
         <p className="mt-3 max-w-3xl text-lg leading-8 text-brand-slate">
@@ -31,7 +34,10 @@ export default function ShopPage() {
 
       <section className="mt-8 grid gap-6 lg:grid-cols-3">
         {products.map((product) => (
-          <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/15 bg-white shadow-[0_10px_30px_rgba(16,34,36,0.05)] transition hover:-translate-y-0.5">
+          <article
+            key={product.id}
+            className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-teal/15 bg-white shadow-[0_10px_30px_rgba(16,34,36,0.05)] transition hover:-translate-y-0.5"
+          >
             <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f4ef]">
               <Image
                 src={product.image}
@@ -43,15 +49,13 @@ export default function ShopPage() {
                 sizes="(max-width: 1024px) 100vw, 33vw"
               />
             </div>
-            <div className="space-y-4 p-6">
+            <div className="flex h-full flex-col space-y-4 p-6">
               <p className="text-sm font-semibold tracking-[0.12em] text-brand-teal">{product.tagline}</p>
               <h2 className="text-2xl font-semibold text-brand-deep">{product.name}</h2>
               <p className="text-base text-brand-slate">{product.subtitle}</p>
               <p className="text-base leading-8 text-brand-slate">{product.description}</p>
+              <PriceDisplay price={product.price} compareAtPrice={product.compareAtPrice} className="pt-1" />
               <ul className="space-y-2 rounded-2xl border border-brand-teal/15 bg-[#fcfbf7] px-4 py-3 text-base leading-8 text-brand-slate">
-                <li>
-                  價格：{product.price} <span className="text-brand-slate/70 line-through">{product.crossedPrice}</span>
-                </li>
                 <li>{product.specs}</li>
                 <li>{product.placement}</li>
                 <li>{product.audience}</li>
@@ -62,7 +66,7 @@ export default function ShopPage() {
                 href={siteConfig.lineBlessingUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="tap-target inline-flex rounded-full border-2 border-brand-teal px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
+                className="tap-target mt-auto inline-flex rounded-full border-2 border-brand-teal px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
               >
                 {product.cta}
               </a>

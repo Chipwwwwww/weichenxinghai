@@ -10,6 +10,8 @@ import {
   ritualItems,
   trustItems,
 } from "@/data/brandContent";
+import { PriceDisplay } from "@/components/shared/PriceDisplay";
+import { ProductJsonLd } from "@/components/shared/ProductJsonLd";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -20,6 +22,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div className="bg-brand-ivory text-brand-ink">
+      <ProductJsonLd products={products} />
       <section className="border-b border-brand-teal/15 bg-gradient-to-b from-brand-ivory to-[#f3f2eb]">
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-20">
           <div className="space-y-6">
@@ -158,7 +161,10 @@ export default function HomePage() {
 
         <div className="mt-8 grid gap-6 lg:grid-cols-3">
           {products.map((product) => (
-            <article key={product.id} className="overflow-hidden rounded-3xl border border-brand-teal/15 bg-white shadow-[0_10px_30px_rgba(16,34,36,0.06)] transition hover:-translate-y-0.5">
+            <article
+              key={product.id}
+              className="flex h-full flex-col overflow-hidden rounded-3xl border border-brand-teal/15 bg-white shadow-[0_10px_30px_rgba(16,34,36,0.06)] transition hover:-translate-y-0.5"
+            >
               <div className="relative aspect-[4/3] overflow-hidden bg-[#f3f4ef]">
                 <Image
                   src={product.image}
@@ -170,16 +176,13 @@ export default function HomePage() {
                   sizes="(max-width: 1024px) 100vw, 33vw"
                 />
               </div>
-              <div className="space-y-4 p-6">
+              <div className="flex h-full flex-col space-y-4 p-6">
                 <p className="text-sm font-semibold tracking-[0.12em] text-brand-teal">{product.tagline}</p>
                 <h3 className="text-2xl font-semibold text-brand-deep">{product.name}</h3>
                 <p className="text-base text-brand-slate">{product.subtitle}</p>
                 <p className="text-base leading-8 text-brand-slate">{product.description}</p>
+                <PriceDisplay price={product.price} compareAtPrice={product.compareAtPrice} className="pt-1" />
                 <ul className="space-y-2 text-base text-brand-slate">
-                  <li>
-                    • 價格：{product.price}{" "}
-                    <span className="text-brand-slate/70 line-through">{product.crossedPrice}</span>
-                  </li>
                   <li>• {product.specs}</li>
                   <li>• {product.placement}</li>
                   <li>• {product.audience}</li>
@@ -190,7 +193,7 @@ export default function HomePage() {
                   href={siteConfig.lineBlessingUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="tap-target inline-flex rounded-full border-2 border-brand-teal px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
+                  className="tap-target mt-auto inline-flex rounded-full border-2 border-brand-teal px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
                 >
                   {product.cta}
                 </a>
