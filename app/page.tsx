@@ -176,7 +176,10 @@ export default function HomePage() {
                 <p className="text-base text-brand-slate">{product.subtitle}</p>
                 <p className="text-base leading-8 text-brand-slate">{product.description}</p>
                 <ul className="space-y-2 text-base text-brand-slate">
-                  <li>• {product.price}</li>
+                  <li>
+                    • 價格：{product.price}{" "}
+                    <span className="text-brand-slate/70 line-through">{product.crossedPrice}</span>
+                  </li>
                   <li>• {product.specs}</li>
                   <li>• {product.placement}</li>
                   <li>• {product.audience}</li>
