@@ -13,6 +13,7 @@ export default function AboutPage() {
       <section className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
         <p className="text-base font-semibold tracking-[0.12em] text-brand-teal">ABOUT WEICHEN XINGHAI</p>
         <h1 className="mt-3 text-4xl font-semibold leading-tight text-brand-deep sm:text-5xl">微塵星海：把祝福，變成每天都能傳遞的日常。</h1>
+        <p className="mt-4 text-lg leading-8 text-brand-slate">微塵星海｜把祝福，變成每天都能傳遞的日常。</p>
         <div className="mt-6 space-y-4 text-lg leading-8 text-brand-slate">
           {aboutStory.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
@@ -39,6 +40,7 @@ export default function AboutPage() {
 
       <section className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
         <h2 className="text-3xl font-semibold text-brand-deep">安心溝通原則</h2>
+        <p className="mt-3 text-base leading-8 text-brand-slate">如有商品、訂單或配送問題，歡迎來信 {siteConfig.contact.email} 或來電 {siteConfig.contact.phone} 與我們聯繫。</p>
         <ul className="mt-4 space-y-2 text-base leading-8 text-brand-slate">
           <li>• 只談設計、外觀、情境、禮盒與陪伴，不做未經證實宣稱。</li>
           <li>• 語氣溫柔、穩定、長輩友善，不浮誇、不神棍、不廉價促銷。</li>

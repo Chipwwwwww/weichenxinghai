@@ -19,9 +19,19 @@ export default function Footer() {
           <Link href="/shop" className="tap-target font-medium hover:text-brand-teal">
             看看禪意選品
           </Link>
+          <Link href="/contact" className="tap-target font-medium hover:text-brand-teal">
+            聯絡我們
+          </Link>
           <a href={siteConfig.lineBlessingUrl} target="_blank" rel="noreferrer" className="tap-target font-medium hover:text-brand-teal">
             加入 LINE 領今日祝福
           </a>
+        </div>
+
+
+        <div className="mt-6 rounded-2xl border border-brand-teal/20 bg-white px-4 py-4 text-base leading-8 text-brand-slate">
+          <p className="font-semibold text-brand-deep">{siteConfig.name}</p>
+          <p>客服信箱：{siteConfig.contact.email}</p>
+          <p>客服電話：{siteConfig.contact.phone}</p>
         </div>
 
         <p className="mt-4 text-base text-brand-slate">安心提醒：全站只描述設計、外觀、情境、送禮與日常陪伴，不做未經證實的效果宣稱。</p>
