@@ -10,6 +10,7 @@ const navItems = [
   { href: "/", label: "品牌首頁" },
   { href: "/about", label: "了解微塵星海" },
   { href: "/shop", label: "看看禪意選品" },
+  { href: "/contact", label: "聯絡我們" },
 ] as const;
 
 export default function Navbar() {
