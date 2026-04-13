@@ -9,7 +9,7 @@ export default function Footer() {
         <p className="mt-3 text-3xl font-semibold text-brand-deep sm:text-4xl">把祝福，變成每天都能傳遞的日常。</p>
         <p className="mt-3 max-w-2xl text-base leading-8 text-brand-slate">
           微塵星海是一個以佛教祝福、靜心陪伴與禪意生活為核心的品牌。
-          你可以先加入 LINE 領今日祝福，再慢慢看看可自用也可送禮的禪意選品。
+          你可以先加入 LINE 領今日祝福，再慢慢看看可自用也可送禮的禪意選品，並透過購物車與結帳流程完成下單。
         </p>
 
         <div className="mt-6 flex flex-wrap gap-5 text-base text-brand-slate">
@@ -21,6 +21,15 @@ export default function Footer() {
           </Link>
           <Link href="/contact" className="tap-target font-medium hover:text-brand-teal">
             聯絡我們
+          </Link>
+          <Link href="/faq" className="tap-target font-medium hover:text-brand-teal">
+            常見問題
+          </Link>
+          <Link href="/shipping-payment" className="tap-target font-medium hover:text-brand-teal">
+            配送與付款
+          </Link>
+          <Link href="/cart" className="tap-target font-medium hover:text-brand-teal">
+            購物車
           </Link>
           <a href={siteConfig.lineBlessingUrl} target="_blank" rel="noreferrer" className="tap-target font-medium hover:text-brand-teal">
             加入 LINE 領今日祝福

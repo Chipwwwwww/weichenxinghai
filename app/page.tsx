@@ -13,6 +13,7 @@ import {
 import { PriceDisplay } from "@/components/shared/PriceDisplay";
 import { ProductJsonLd } from "@/components/shared/ProductJsonLd";
 import { siteConfig } from "@/data/siteConfig";
+import { AddToCartButton } from "@/components/cart/AddToCartButton";
 
 export const metadata: Metadata = {
   title: "首頁",
@@ -189,14 +190,12 @@ export default function HomePage() {
                   <li>• {product.usage}</li>
                 </ul>
                 <p className="rounded-2xl border border-brand-teal/15 bg-[#fcfbf7] px-4 py-3 text-base leading-8 text-brand-slate">{product.useCases}</p>
-                <a
-                  href={siteConfig.lineBlessingUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="tap-target mt-auto inline-flex rounded-full border-2 border-brand-teal px-5 py-3 text-base font-semibold text-brand-teal transition hover:bg-brand-teal hover:text-white"
-                >
-                  {product.cta}
-                </a>
+                <div className="mt-auto flex flex-wrap gap-3">
+                  <AddToCartButton productId={product.id} />
+                  <Link href={`/shop/${product.id}`} className="tap-target inline-flex rounded-full border-2 border-brand-teal px-5 py-3 text-base font-semibold text-brand-teal">
+                    查看商品頁
+                  </Link>
+                </div>
               </div>
             </article>
           ))}
@@ -212,6 +211,18 @@ export default function HomePage() {
                 {item}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
+        <div className="rounded-3xl border border-brand-gold/40 bg-[#fffdf8] p-6 sm:p-8">
+          <h2 className="text-3xl font-semibold text-brand-deep">購物與結帳流程</h2>
+          <p className="mt-3 text-lg leading-8 text-brand-slate">商品頁加入購物車後，可在購物車調整數量與刪除，再前往結帳填寫收件資訊，最後選擇線上付款或貨到付款。</p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/shop" className="tap-target rounded-full border-2 border-brand-teal px-6 py-3 text-base font-semibold text-brand-teal">看看禪意選品</Link>
+            <Link href="/cart" className="tap-target rounded-full bg-brand-deep px-6 py-3 text-base font-semibold text-white">前往購物車</Link>
+            <Link href="/shipping-payment" className="tap-target rounded-full border-2 border-brand-gold/70 bg-white px-6 py-3 text-base font-semibold text-brand-deep">配送與付款說明</Link>
           </div>
         </div>
       </section>
