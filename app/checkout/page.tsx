@@ -82,6 +82,20 @@ export default function CheckoutPage() {
             </label>
           </div>
 
+          <label className="block rounded-2xl border border-brand-teal/20 bg-[#fffdf8] p-4 text-sm leading-7 text-brand-slate">
+            <span className="flex items-start gap-2">
+              <input required name="legalConsent" type="checkbox" className="mt-1" />
+              <span>
+                送出訂單即表示您已閱讀並同意
+                <Link href="/terms" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《服務條款》</Link>、
+                <Link href="/privacy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《隱私權政策》</Link>
+                與
+                <Link href="/refund-policy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《退款政策》</Link>
+                ，並理解配送、付款與售後處理方式。
+              </span>
+            </span>
+          </label>
+
           <button type="submit" className="tap-target w-full rounded-full bg-brand-deep px-6 py-3 text-lg font-semibold text-white">送出訂單 / 前往付款</button>
           {resultMessage ? <p className="whitespace-pre-line rounded-xl border border-brand-gold/45 bg-[#fffdf8] p-4 text-base text-brand-slate">{resultMessage}</p> : null}
         </form>
