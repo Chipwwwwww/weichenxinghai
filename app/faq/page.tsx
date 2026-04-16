@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { faqItems } from "@/data/brandContent";
 
 export const metadata: Metadata = {
@@ -19,6 +20,16 @@ export default function FaqPage() {
           </details>
         ))}
       </div>
+
+      <section className="rounded-2xl border border-brand-teal/20 bg-[#fffdf8] p-5 text-base leading-8 text-brand-slate">
+        <p>更多關於配送、付款、隱私與退款處理方式，請參閱消費者權益、服務條款、隱私權政策與退款政策。</p>
+        <div className="mt-3 flex flex-wrap gap-4">
+          <Link href="/consumer-rights" className="font-semibold text-brand-teal hover:text-[#1f5a54]">消費者權益</Link>
+          <Link href="/terms" className="font-semibold text-brand-teal hover:text-[#1f5a54]">服務條款</Link>
+          <Link href="/privacy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">隱私權政策</Link>
+          <Link href="/refund-policy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">退款政策</Link>
+        </div>
+      </section>
     </div>
   );
 }

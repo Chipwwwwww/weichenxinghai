@@ -36,6 +36,24 @@ export default function Footer() {
           </a>
         </div>
 
+        <div className="mt-6 rounded-2xl border border-brand-teal/20 bg-white px-4 py-4">
+          <p className="text-sm font-semibold tracking-[0.08em] text-brand-teal">法務與消費者揭露</p>
+          <div className="mt-3 flex flex-wrap gap-4 text-base text-brand-slate">
+            <Link href="/consumer-rights" className="tap-target font-medium hover:text-brand-teal">
+              消費者權益
+            </Link>
+            <Link href="/terms" className="tap-target font-medium hover:text-brand-teal">
+              服務條款
+            </Link>
+            <Link href="/privacy" className="tap-target font-medium hover:text-brand-teal">
+              隱私權政策
+            </Link>
+            <Link href="/refund-policy" className="tap-target font-medium hover:text-brand-teal">
+              退款政策
+            </Link>
+          </div>
+        </div>
+
 
         <div className="mt-6 rounded-2xl border border-brand-teal/20 bg-white px-4 py-4 text-base leading-8 text-brand-slate">
           <p className="font-semibold text-brand-deep">{siteConfig.name}</p>

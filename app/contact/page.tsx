@@ -40,6 +40,15 @@ export default function ContactPage() {
           </Link>
         </div>
       </section>
+
+      <section className="rounded-2xl border border-brand-teal/20 bg-[#fffdf8] p-6 text-base leading-8 text-brand-slate sm:p-8">
+        <h2 className="text-2xl font-semibold text-brand-deep">聯繫資料與隱私提醒</h2>
+        <p className="mt-3">
+          送出訊息或提供聯絡資訊前，建議先閱讀
+          <Link href="/privacy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《隱私權政策》</Link>
+          。我們僅在處理客服諮詢、訂單與售後需求的必要範圍內使用您的資料。
+        </p>
+      </section>
     </div>
   );
 }

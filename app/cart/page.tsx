@@ -51,6 +51,14 @@ export default function CartPage() {
 
           <section className="space-y-4">
             <OrderSummary subtotal={subtotal} shippingFee={shippingFee} total={total} />
+            <p className="rounded-2xl border border-brand-teal/20 bg-[#fffdf8] px-4 py-3 text-sm leading-7 text-brand-slate">
+              送出訂單即表示您已閱讀並同意
+              <Link href="/terms" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《服務條款》</Link>、
+              <Link href="/privacy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《隱私權政策》</Link>
+              與
+              <Link href="/refund-policy" className="font-semibold text-brand-teal hover:text-[#1f5a54]">《退款政策》</Link>
+              ，並理解配送、付款與售後處理方式。
+            </p>
             <Link href="/checkout" className="tap-target inline-flex w-full justify-center rounded-full bg-brand-deep px-6 py-3 text-lg font-semibold text-white">
               前往結帳
             </Link>
