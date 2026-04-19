@@ -1,0 +1,11 @@
+page_url,page_type,title,price_or_tier,cta_text,entity_name,tax_id,notes
+https://donate.kampojanechen.org/,fundraising,台灣岡波聖地閉關中心建造計劃,"單筆3600; 每月300/600/1200/2880/4680; 高額單筆66000/168000","立即支持",解脫協會,42521621,"FAQ載明收據次年四月前寄出; 有每月限額與12期機制"
+https://mokshah.org/fund/index,fundraising,植福互助送行計劃,"每月220/600/1200/1800/3800; 單次220/600/1200/1800/3800","贊助; 贊助專案; 免費領取送行聖物包",MOKSHAH 解脫協會,,"頁首顯示NT$137,568/月與目標NT$600,000/月; 長期募資; 人次"
+https://www.mokshah.org/news/detail/1020,content,MOKSHAH 最新消息文章,NA,"公益集資",MOKSHAH 解脫協會,,"內容頁導向 https://mokshah.org/fund/index"
+https://www.kampojanechen.org/SalePage/Index/11502351,product,"〖施財寶閣寶藏館〗寶賢錢母：多有神驗",NA,"結帳",岡波事業社,,"商品頁可見購物流程與客服/購物說明; 價格欄位在抓取輸出中為模板變數"
+https://www.kampojanechen.org/SalePage/Index/8160798,product,"〖度母之家寶藏館〗好運輪鍊",NA,結帳,岡波事業社,,"snippet可見已賣出389件"
+https://www.kampojanechen.org/SalePage/Index/11073753,product,"〖度母之家寶藏館〗不動護輪",NA,結帳,岡波事業社,,"snippet可見已賣出669件"
+https://www.kampojanechen.org/v2/Official/BrandStory,about,品牌故事,NA,NA,台灣岡波聖地,,"可見URL但抓取回傳0 lines"
+https://www.kampojanechen.org/shop/introduce/41047?t=1,about,商店簡介,NA,NA,台灣岡波聖地,,"可見URL但抓取回傳0 lines"
+https://wabay.tw/rewards/38585?locale=zh-TW,fundraising_reward,懷愛之最 reward,NT$66000,立即支持,WaBay,,"由donate頁CTA外連; 抓取403"
+https://wabay.tw/rewards/38584?locale=zh-TW,fundraising_reward,懷愛倍增 reward,NT$168000,立即支持,WaBay,,"由donate頁CTA外連; 抓取403"
