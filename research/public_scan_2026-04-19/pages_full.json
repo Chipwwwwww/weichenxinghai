@@ -1,0 +1,410 @@
+[
+  {
+    "page_url": "https://www.kampojanechen.org/",
+    "final_url": "https://www.kampojanechen.org/",
+    "page_type": "home",
+    "title": "台灣岡波聖地|傳承法王精神的藏傳佛教基地。提供永久牌位、消災與超度服務",
+    "subtitle": "",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "我的收藏",
+      "會員登入/註冊"
+    ],
+    "entity_name": "台灣岡波聖地",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "hydrated",
+    "status_note": "首頁內容對無腳本抓取可見欄位有限",
+    "evidence_snippets": "可見會員登入/購物車導覽元素",
+    "source_links": [
+      "https://www.kampojanechen.org/"
+    ]
+  },
+  {
+    "page_url": "https://www.kampojanechen.org/v2/official/SalePageCategory/587622",
+    "final_url": "https://www.kampojanechen.org/v2/official/SalePageCategory/587622",
+    "page_type": "category",
+    "title": "臻澹薰香｜身心調整系列",
+    "subtitle": "〖琉璃水苑寶藏館〗",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [],
+    "entity_name": "琉璃水苑寶藏館",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "hydrated",
+    "status_note": "抓到分類敘述，價格與商品列表可能由前端渲染",
+    "evidence_snippets": "頁面敘述介紹臻澹薰香",
+    "source_links": [
+      "https://www.kampojanechen.org/v2/official/SalePageCategory/587622"
+    ]
+  },
+  {
+    "page_url": "https://donate.kampojanechen.org/",
+    "final_url": "https://donate.kampojanechen.org/",
+    "page_type": "fundraising",
+    "title": "台灣岡波聖地閉關中心建造計劃",
+    "subtitle": "共造21世紀 密宗修行之路的基礎建設",
+    "breadcrumb": "",
+    "price_or_tier": [
+      "單筆 $3600",
+      "每月$300",
+      "每月$600",
+      "每月＄1200",
+      "每月＄2,880",
+      "每月＄4,680",
+      "單筆 NT$ 66,000",
+      "單筆 NT$ 168,000"
+    ],
+    "sold_count": "",
+    "cta_text": [
+      "立即支持"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "42521621",
+    "receipt_info": "收據將於捐款下一年度四月前寄出",
+    "recurring_or_one_time": "single+recurring",
+    "quota_or_limit": "每月限額 6 位 / 每月限額 3 位",
+    "faq_present": true,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "可見FAQ、價格階梯、外連wabay按鈕",
+    "evidence_snippets": "多層級護持方案+入藏方案+FAQ收據規則",
+    "source_links": [
+      "https://donate.kampojanechen.org/"
+    ]
+  },
+  {
+    "page_url": "https://wabay.tw/rewards/38301?locale=zh-TW",
+    "final_url": "https://wabay.tw/rewards/38301?locale=zh-TW",
+    "page_type": "reward",
+    "title": "",
+    "subtitle": "",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "立即支持"
+    ],
+    "entity_name": "",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "not-followed",
+    "render_mode": "blocked",
+    "status_note": "403 Forbidden；依規範停止加深",
+    "evidence_snippets": "從 donate.kampojanechen.org 直接連出",
+    "source_links": [
+      "https://donate.kampojanechen.org/",
+      "https://wabay.tw/rewards/38301?locale=zh-TW"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/",
+    "final_url": "https://mokshah.org/",
+    "page_type": "home",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "了解更多",
+      "公益集資"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "主選單清楚導流到news/article/fund/support",
+    "evidence_snippets": "顯示最新消息日期串列",
+    "source_links": [
+      "https://mokshah.org/"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/about",
+    "final_url": "https://mokshah.org/about",
+    "page_type": "about",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "關於解脫協會",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "成果下載",
+      "參贊解脫共修"
+    ],
+    "entity_name": "解脫協會Mokshah",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "介紹翻譯、教學、共修計畫",
+    "evidence_snippets": "成立於2016年底",
+    "source_links": [
+      "https://mokshah.org/about"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/news",
+    "final_url": "https://mokshah.org/news",
+    "page_type": "news",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "最新消息",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "查看更多"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "可自然翻頁/列表式閱讀（至少多篇detail）",
+    "evidence_snippets": "含2025-10月份文章清單",
+    "source_links": [
+      "https://mokshah.org/news"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/news/detail/1462",
+    "final_url": "https://mokshah.org/news/detail/1462",
+    "page_type": "article",
+    "title": "消災延壽工作坊心得分享。（線上工作坊系列）",
+    "subtitle": "最新消息",
+    "breadcrumb": "news/detail",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "回上一頁"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "內容頁可直接公開訪問",
+    "evidence_snippets": "公開日期2025-10-15",
+    "source_links": [
+      "https://mokshah.org/news/detail/1462"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/article",
+    "final_url": "https://mokshah.org/article",
+    "page_type": "news",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "解脫文章",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "查看更多"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "文章列表可訪問",
+    "evidence_snippets": "提供文章導流",
+    "source_links": [
+      "https://mokshah.org/article"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/antarabhava",
+    "final_url": "https://mokshah.org/antarabhava",
+    "page_type": "other",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "中陰身",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "公開專題頁",
+    "evidence_snippets": "從主選單可達",
+    "source_links": [
+      "https://mokshah.org/antarabhava"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/ultimateliberation",
+    "final_url": "https://mokshah.org/ultimateliberation",
+    "page_type": "other",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "妙喜淨土送行計畫",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "公益集資"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "送行計畫介紹頁",
+    "evidence_snippets": "由首頁選單直接連結",
+    "source_links": [
+      "https://mokshah.org/ultimateliberation"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/translate/download",
+    "final_url": "https://mokshah.org/translate/download",
+    "page_type": "other",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "翻譯成果下載",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "下載"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "公開下載頁",
+    "evidence_snippets": "主選單可達",
+    "source_links": [
+      "https://mokshah.org/translate/download"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/support/book",
+    "final_url": "https://mokshah.org/support/book",
+    "page_type": "fundraising",
+    "title": "MOKSHAH 解脫協會",
+    "subtitle": "解脫善書系列",
+    "breadcrumb": "",
+    "price_or_tier": [
+      "NT$20/本",
+      "最低參贊金額為10本"
+    ],
+    "sold_count": "",
+    "cta_text": [
+      "送出"
+    ],
+    "entity_name": "解脫協會",
+    "tax_id": "",
+    "receipt_info": "收據會於下一年度寄出（頁面文字含*月佔位）",
+    "recurring_or_one_time": "one-time",
+    "quota_or_limit": "最低10本",
+    "faq_present": false,
+    "public_api_observed": "none-observed",
+    "render_mode": "hydrated",
+    "status_note": "頁面出現模板變數 {{ item.title }}，部分欄位疑似前端注入",
+    "evidence_snippets": "可見單價NT$20/本與收據說明",
+    "source_links": [
+      "https://mokshah.org/support/book"
+    ]
+  },
+  {
+    "page_url": "https://mokshah.org/fund/index",
+    "final_url": "https://mokshah.org/fund/index",
+    "page_type": "fundraising",
+    "title": "MOKSHAH 解脫協會|植福互助送行計劃",
+    "subtitle": "為逝去的亡者 免費提供送行助念法事",
+    "breadcrumb": "",
+    "price_or_tier": [
+      "NT$ 137,568 / 每月",
+      "目標金額 NT$600,000 / 每月"
+    ],
+    "sold_count": "人次 1,258",
+    "cta_text": [
+      "贊助專案",
+      "免費領取送行聖物包",
+      "免費法事"
+    ],
+    "entity_name": "解脫協會/解脫教團",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "recurring",
+    "quota_or_limit": "長期募資",
+    "faq_present": true,
+    "public_api_observed": "none-observed",
+    "render_mode": "static",
+    "status_note": "頁面可見募資進度百分比與人次",
+    "evidence_snippets": "23% 達成、每月目標60萬",
+    "source_links": [
+      "https://mokshah.org/fund/index"
+    ]
+  },
+  {
+    "page_url": "https://shopee.tw",
+    "final_url": "https://shopee.tw",
+    "page_type": "other",
+    "title": "external",
+    "subtitle": "",
+    "breadcrumb": "",
+    "price_or_tier": [],
+    "sold_count": "",
+    "cta_text": [
+      "結緣解脫寶藏"
+    ],
+    "entity_name": "",
+    "tax_id": "",
+    "receipt_info": "",
+    "recurring_or_one_time": "",
+    "quota_or_limit": "",
+    "faq_present": false,
+    "public_api_observed": "not-crawled-external",
+    "render_mode": "blocked",
+    "status_note": "外站僅記錄直接連出，不加深",
+    "evidence_snippets": "從 mokshah 主選單連出",
+    "source_links": [
+      "https://mokshah.org/",
+      "https://shopee.tw"
+    ]
+  }
+]

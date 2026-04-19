@@ -1,0 +1,13 @@
+source_url,entity_name,offer_type,amount,frequency,cta_text,notes
+https://donate.kampojanechen.org/,解脫協會,fundraising,單筆 $3600,single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,每月$300,single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,每月$600,single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,每月＄1200,single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,"每月＄2,880",single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,"每月＄4,680",single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,"單筆 NT$ 66,000",single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://donate.kampojanechen.org/,解脫協會,fundraising,"單筆 NT$ 168,000",single+recurring,立即支持,可見FAQ、價格階梯、外連wabay按鈕
+https://mokshah.org/support/book,解脫協會,fundraising,NT$20/本,one-time,送出,頁面出現模板變數 {{ item.title }}，部分欄位疑似前端注入
+https://mokshah.org/support/book,解脫協會,fundraising,最低參贊金額為10本,one-time,送出,頁面出現模板變數 {{ item.title }}，部分欄位疑似前端注入
+https://mokshah.org/fund/index,解脫協會/解脫教團,fundraising,"NT$ 137,568 / 每月",recurring,贊助專案 | 免費領取送行聖物包 | 免費法事,頁面可見募資進度百分比與人次
+https://mokshah.org/fund/index,解脫協會/解脫教團,fundraising,"目標金額 NT$600,000 / 每月",recurring,贊助專案 | 免費領取送行聖物包 | 免費法事,頁面可見募資進度百分比與人次
