@@ -1,0 +1,16 @@
+page_url,page_type,title,price_or_tier,cta_text,entity_name,tax_id,notes
+https://www.kampojanechen.org/,home,台灣岡波聖地|傳承法王精神的藏傳佛教基地。提供永久牌位、消災與超度服務,,我的收藏 | 會員登入/註冊,台灣岡波聖地,,首頁內容對無腳本抓取可見欄位有限
+https://www.kampojanechen.org/v2/official/SalePageCategory/587622,category,臻澹薰香｜身心調整系列,,,琉璃水苑寶藏館,,抓到分類敘述，價格與商品列表可能由前端渲染
+https://donate.kampojanechen.org/,fundraising,台灣岡波聖地閉關中心建造計劃,"單筆 $3600 | 每月$300 | 每月$600 | 每月＄1200 | 每月＄2,880 | 每月＄4,680 | 單筆 NT$ 66,000 | 單筆 NT$ 168,000",立即支持,解脫協會,42521621,可見FAQ、價格階梯、外連wabay按鈕
+https://wabay.tw/rewards/38301?locale=zh-TW,reward,,,立即支持,,,403 Forbidden；依規範停止加深
+https://mokshah.org/,home,MOKSHAH 解脫協會,,了解更多 | 公益集資,解脫協會,,主選單清楚導流到news/article/fund/support
+https://mokshah.org/about,about,MOKSHAH 解脫協會,,成果下載 | 參贊解脫共修,解脫協會Mokshah,,介紹翻譯、教學、共修計畫
+https://mokshah.org/news,news,MOKSHAH 解脫協會,,查看更多,解脫協會,,可自然翻頁/列表式閱讀（至少多篇detail）
+https://mokshah.org/news/detail/1462,article,消災延壽工作坊心得分享。（線上工作坊系列）,,回上一頁,解脫協會,,內容頁可直接公開訪問
+https://mokshah.org/article,news,MOKSHAH 解脫協會,,查看更多,解脫協會,,文章列表可訪問
+https://mokshah.org/antarabhava,other,MOKSHAH 解脫協會,,,解脫協會,,公開專題頁
+https://mokshah.org/ultimateliberation,other,MOKSHAH 解脫協會,,公益集資,解脫協會,,送行計畫介紹頁
+https://mokshah.org/translate/download,other,MOKSHAH 解脫協會,,下載,解脫協會,,公開下載頁
+https://mokshah.org/support/book,fundraising,MOKSHAH 解脫協會,NT$20/本 | 最低參贊金額為10本,送出,解脫協會,,頁面出現模板變數 {{ item.title }}，部分欄位疑似前端注入
+https://mokshah.org/fund/index,fundraising,MOKSHAH 解脫協會|植福互助送行計劃,"NT$ 137,568 / 每月 | 目標金額 NT$600,000 / 每月",贊助專案 | 免費領取送行聖物包 | 免費法事,解脫協會/解脫教團,,頁面可見募資進度百分比與人次
+https://shopee.tw,other,external,,結緣解脫寶藏,,,外站僅記錄直接連出，不加深
