@@ -12,6 +12,7 @@ import {
 } from "@/data/brandContent";
 import { PriceDisplay } from "@/components/shared/PriceDisplay";
 import { ProductJsonLd } from "@/components/shared/ProductJsonLd";
+import SupportEmailInline from "@/components/shared/SupportEmailInline";
 import { siteConfig } from "@/data/siteConfig";
 import { AddToCartButton } from "@/components/cart/AddToCartButton";
 
@@ -231,7 +232,7 @@ export default function HomePage() {
         <div className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
           <h2 className="text-3xl font-semibold text-brand-deep">信任資訊與常見問題</h2>
           <p className="mt-3 text-lg leading-8 text-brand-slate">我們把品牌定位、內容邊界與客服入口寫清楚，讓你安心閱讀與選擇。</p>
-          <p className="mt-2 text-base leading-8 text-brand-slate">如有商品、訂單或配送問題，歡迎來信 {siteConfig.contact.email} 或來電 {siteConfig.contact.phone} 與我們聯繫。</p>
+          <p className="mt-2 text-base leading-8 text-brand-slate">如有商品、訂單或配送問題，歡迎來信 <SupportEmailInline /> 或來電 {siteConfig.contact.phone} 與我們聯繫。</p>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {trustItems.map((item) => (
               <div key={item} className="rounded-xl border border-brand-teal/20 bg-[#fcfbf7] px-4 py-3 text-base leading-8 text-brand-slate">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SupportEmailInline from "@/components/shared/SupportEmailInline";
 import { siteConfig } from "@/data/siteConfig";
 
 export default function Footer() {
@@ -57,7 +58,7 @@ export default function Footer() {
 
         <div className="mt-6 rounded-2xl border border-brand-teal/20 bg-white px-4 py-4 text-base leading-8 text-brand-slate">
           <p className="font-semibold text-brand-deep">{siteConfig.name}</p>
-          <p>客服信箱：{siteConfig.contact.email}</p>
+          <p>客服信箱：<SupportEmailInline /></p>
           <p>客服電話：{siteConfig.contact.phone}</p>
         </div>
 

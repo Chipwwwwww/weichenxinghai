@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { aboutPillars, aboutStory } from "@/data/brandContent";
 import { siteConfig } from "@/data/siteConfig";
+import SupportEmailInline from "@/components/shared/SupportEmailInline";
 
 export const metadata: Metadata = {
   title: "了解微塵星海",
@@ -40,7 +41,7 @@ export default function AboutPage() {
 
       <section className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
         <h2 className="text-3xl font-semibold text-brand-deep">安心溝通原則</h2>
-        <p className="mt-3 text-base leading-8 text-brand-slate">如有商品、訂單或配送問題，歡迎來信 {siteConfig.contact.email} 或來電 {siteConfig.contact.phone} 與我們聯繫。</p>
+        <p className="mt-3 text-base leading-8 text-brand-slate">如有商品、訂單或配送問題，歡迎來信 <SupportEmailInline /> 或來電 {siteConfig.contact.phone} 與我們聯繫。</p>
         <ul className="mt-4 space-y-2 text-base leading-8 text-brand-slate">
           <li>• 只談設計、外觀、情境、禮盒與陪伴，不做未經證實宣稱。</li>
           <li>• 語氣溫柔、穩定、長輩友善，不浮誇、不神棍、不廉價促銷。</li>
