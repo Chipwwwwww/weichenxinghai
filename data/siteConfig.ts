@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "微塵星海",
   tagline: "把祝福，變成每天都能傳遞的日常。",
   contact: {
-    email: "microdust.galaxy@gmail.com",
+    email: "microdust.galaxy001@gmail.com",
     phone: "0909798251",
     lineId: "weichenxinghai",
     social: "微塵星海",
