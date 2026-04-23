@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SupportEmailInline from "@/components/shared/SupportEmailInline";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function ContactPage() {
         <p className="text-base font-semibold tracking-[0.12em] text-brand-teal">客服支援</p>
         <h1 className="mt-3 text-4xl font-semibold text-brand-deep sm:text-5xl">聯絡我們</h1>
         <p className="mt-4 text-lg leading-8 text-brand-slate">
-          如有商品、訂單或配送問題，歡迎來信 {siteConfig.contact.email} 或來電 {siteConfig.contact.phone} 與我們聯繫。
+          如有商品、訂單或配送問題，歡迎來信 <SupportEmailInline /> 或來電 {siteConfig.contact.phone} 與我們聯繫。
         </p>
       </section>
 
@@ -22,7 +23,7 @@ export default function ContactPage() {
         <h2 className="text-3xl font-semibold text-brand-deep">客服資訊</h2>
         <ul className="mt-4 space-y-2 text-base leading-8 text-brand-slate">
           <li>• 品牌名稱：{siteConfig.name}</li>
-          <li>• 客服信箱：{siteConfig.contact.email}</li>
+          <li>• 客服信箱：<SupportEmailInline /></li>
           <li>• 客服電話：{siteConfig.contact.phone}</li>
           <li>• LINE ID：{siteConfig.contact.lineId}</li>
           <li>• 社群名稱：{siteConfig.contact.social}</li>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/data/siteConfig";
+import SupportEmailInline from "@/components/shared/SupportEmailInline";
 
 export const metadata: Metadata = {
   title: "隱私權政策",
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
         <p className="mt-3">就您提供之個人資料，您得依法向微塵星海申請查詢、閱覽、製給複製本、補充、更正、停止蒐集處理利用或刪除；但若因法令義務、交易紀錄、未結爭議或其他合法事由需保留者，不在此限。</p>
         <p>如欲提出申請，請透過下列方式聯繫：</p>
         <ul className="list-disc space-y-1 pl-6">
-          <li>客服 Email：{siteConfig.contact.email}</li>
+          <li>客服 Email：<SupportEmailInline /></li>
           <li>LINE 官方帳號：[請填寫 LINE 官方帳號]</li>
         </ul>
 
