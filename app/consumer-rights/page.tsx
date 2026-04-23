@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "消費者權益說明",
@@ -20,7 +21,7 @@ export default function ConsumerRightsPage() {
         <h2 className="text-3xl font-semibold text-brand-deep">一、商家與客服資訊</h2>
         <ul className="mt-4 list-disc space-y-1 pl-6">
           <li>商家名稱：微塵星海</li>
-          <li>客服 Email：[請填寫客服 Email]</li>
+          <li>客服 Email：{siteConfig.contact.email}</li>
           <li>LINE 官方帳號：[請填寫 LINE 官方帳號]</li>
           <li>客服服務時間：[請填寫客服服務時間]</li>
           <li>聯絡地址：[請填寫公司/商業登記地址或聯絡地址]</li>
@@ -71,7 +72,7 @@ export default function ConsumerRightsPage() {
         <h2 className="mt-8 text-2xl font-semibold text-brand-deep">十、消費爭議聯繫方式</h2>
         <p className="mt-3">若您對商品、訂單、配送、退款或其他消費事項有疑問，請先透過以下方式與我們聯繫：</p>
         <ul className="list-disc space-y-1 pl-6">
-          <li>客服 Email：[請填寫客服 Email]</li>
+          <li>客服 Email：{siteConfig.contact.email}</li>
           <li>LINE 官方帳號：[請填寫 LINE 官方帳號]</li>
           <li>客服服務時間：[請填寫客服服務時間]</li>
         </ul>

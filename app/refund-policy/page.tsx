@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "退款政策",
@@ -88,7 +89,7 @@ export default function RefundPolicyPage() {
 
         <h2 className="mt-8 text-2xl font-semibold text-brand-deep">十一、客服聯繫方式</h2>
         <ul className="mt-3 list-disc space-y-1 pl-6">
-          <li>客服 Email：[請填寫客服 Email]</li>
+          <li>客服 Email：{siteConfig.contact.email}</li>
           <li>LINE 官方帳號：[請填寫 LINE 官方帳號]</li>
           <li>客服服務時間：[請填寫客服服務時間]</li>
         </ul>
