@@ -12,10 +12,8 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_LINE_BLESSING_URL?.trim() || "https://lin.ee/p5e6p7jw",
   cta: {
     joinLine: "加入 LINE 領今日祝福",
-    askLine: "今天想送出祝福",
-    notifyLine: "領今日平安圖",
-    exploreShop: "看看禪意選品",
-    learnBrand: "了解微塵星海",
-    contactSupport: "聯絡我們",
+    exploreShop: "看看商品與禮盒",
+    learnBrand: "品牌理念",
+    contactSupport: "真人客服／回饋建議",
   },
 } as const;

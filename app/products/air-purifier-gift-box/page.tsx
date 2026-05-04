@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata={title:"小型桌面型空氣清新機｜完整禮盒版",description:"小型桌面型空氣清新機｜完整禮盒版，NT$3,980。"};
+export default function PageProductsAirPurifierGiftBox(){return <div className="p-8 space-y-3"><h1>小型桌面型空氣清新機｜完整禮盒版</h1><p>售價：NT$3,980</p><h2>焚香後的小空間，也值得一份更舒服的日常照顧。</h2><p>加入 LINE 領今日祝福，第一次下單可貨到付款。慢慢看，若不確定可找真人客服／回饋建議。</p><h3>賣點</h3><ul><li>• 禮盒完整</li><li>• 適合自用、探訪、節慶與結緣</li><li>• 以日常可使用為核心</li><li>• 語氣清楚可信</li><li>• 可承接 LINE 祝福</li><li>• 送禮體面</li></ul><h3>適合誰</h3><p>適合想把祝福放進每天生活裡的人。</p><h3>不適合期待什麼</h3><p>不提供醫療或神奇效果承諾。</p><h3>FAQ</h3><p>Q:第一次下單？A:可選貨到付款。</p></div>}
