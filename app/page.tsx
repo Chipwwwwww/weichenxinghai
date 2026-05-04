@@ -18,7 +18,7 @@ import { AddToCartButton } from "@/components/cart/AddToCartButton";
 
 export const metadata: Metadata = {
   title: "首頁",
-  description: "把祝福，變成每天都能傳遞的日常。加入 LINE 領今日祝福，並看看微塵星海禪意選品。",
+  description: "把祝福，變成每天都能傳遞的日常。加入 LINE 領今日祝福，並看看微塵星海商品與禮盒。",
 };
 
 export default function HomePage() {
@@ -76,7 +76,7 @@ export default function HomePage() {
             </div>
             <p className="mt-4 text-base leading-8 text-brand-slate">
               加入 LINE 領今日祝福，先收下今日平安圖與今日靜心小語，再把祝福傳給你在意的人。當你想把這份心意留得更久，
-              再看看禪意選品與祝福儀式物。
+              再看看商品與禮盒與祝福儀式物。
             </p>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function HomePage() {
               <p className="mt-2 text-base leading-8 text-brand-slate">{blessingPreview.quote}</p>
             </article>
             <article className="rounded-2xl border border-brand-teal/20 bg-white p-5">
-              <p className="text-sm font-semibold tracking-[0.1em] text-brand-teal">看看大家點亮了什麼</p>
+              <p className="text-sm font-semibold tracking-[0.1em] text-brand-teal">點亮心意／今日共鳴</p>
               <p className="mt-2 text-base leading-8 text-brand-slate">{blessingPreview.sharePrompt}</p>
               <ul className="mt-3 space-y-2 text-base text-brand-slate">
                 {blessingPreview.lightBlessings.map((item) => (
@@ -158,7 +158,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
-        <h2 className="text-3xl font-semibold text-brand-deep">禪意選品｜可自用也可送禮</h2>
+        <h2 className="text-3xl font-semibold text-brand-deep">商品與禮盒｜可自用也可送禮</h2>
         <p className="mt-3 max-w-3xl text-lg leading-8 text-brand-slate">三條商品線皆以日常陪伴、禮盒質感與長輩友善為核心，並保持命名與語氣一致。</p>
 
         <div className="mt-8 grid gap-6 lg:grid-cols-3">
@@ -221,7 +221,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-semibold text-brand-deep">購物與結帳流程</h2>
           <p className="mt-3 text-lg leading-8 text-brand-slate">商品頁加入購物車後，可在購物車調整數量與刪除，再前往結帳填寫收件資訊，最後選擇線上付款或貨到付款。</p>
           <div className="mt-5 flex flex-wrap gap-3">
-            <Link href="/shop" className="tap-target rounded-full border-2 border-brand-teal px-6 py-3 text-base font-semibold text-brand-teal">看看禪意選品</Link>
+            <Link href="/shop" className="tap-target rounded-full border-2 border-brand-teal px-6 py-3 text-base font-semibold text-brand-teal">看看商品與禮盒</Link>
             <Link href="/cart" className="tap-target rounded-full bg-brand-deep px-6 py-3 text-base font-semibold text-white">前往購物車</Link>
             <Link href="/shipping-payment" className="tap-target rounded-full border-2 border-brand-gold/70 bg-white px-6 py-3 text-base font-semibold text-brand-deep">配送與付款說明</Link>
           </div>

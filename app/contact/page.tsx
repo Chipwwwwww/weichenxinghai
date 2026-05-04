@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
   title: "聯絡我們",
-  description: "微塵星海客服資訊：客服信箱、客服電話與 LINE ID。",
+  description: "微塵星海客服資訊：客服信箱、客服電話與 LINE 官方帳號。",
 };
 
 export default function ContactPage() {
@@ -25,8 +25,9 @@ export default function ContactPage() {
           <li>• 品牌名稱：{siteConfig.name}</li>
           <li>• 客服信箱：<SupportEmailInline /></li>
           <li>• 客服電話：{siteConfig.contact.phone}</li>
-          <li>• LINE ID：{siteConfig.contact.lineId}</li>
-          <li>• 社群名稱：{siteConfig.contact.social}</li>
+          <li>• LINE 對外名稱：微塵星海｜今日祝福</li>
+          <li>• LINE 帳號 ID：{siteConfig.contact.lineId}</li>
+          <li>• LINE 社群名稱：{siteConfig.contact.social}</li>
         </ul>
       </section>
 
@@ -34,7 +35,7 @@ export default function ContactPage() {
         <p>微塵星海｜把祝福，變成每天都能傳遞的日常。</p>
         <div className="mt-4 flex flex-wrap gap-4">
           <Link href="/shop" className="tap-target font-semibold text-brand-teal hover:text-[#1f5a54]">
-            看看禪意選品 →
+            看看商品與禮盒 →
           </Link>
           <Link href="/about" className="tap-target font-semibold text-brand-teal hover:text-[#1f5a54]">
             了解微塵星海 →

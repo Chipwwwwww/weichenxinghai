@@ -9,8 +9,8 @@ import { products } from "@/data/brandContent";
 const sceneTags = ["可自用也可送人", "長輩友善", "禮盒體面", "日常陪伴"] as const;
 
 export const metadata: Metadata = {
-  title: "看看禪意選品",
-  description: "三條商品主線：禪意日常玻璃杯、小型桌面型空氣清新機｜完整禮盒版、禪意香氛杯｜4.0mm 柱狀活性炭列陣封裝版。",
+  title: "看看商品與禮盒",
+  description: "三款商品：禪意日常玻璃杯禮盒、禪意香氛杯禮盒、小型桌面型空氣清新機｜完整禮盒版。",
 };
 
 export default function ShopPage() {
@@ -18,9 +18,9 @@ export default function ShopPage() {
     <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8">
       <ProductJsonLd products={products} />
       <section className="rounded-3xl border border-brand-teal/15 bg-white p-6 sm:p-8">
-        <h1 className="text-4xl font-semibold text-brand-deep sm:text-5xl">看看禪意選品</h1>
+        <h1 className="text-4xl font-semibold text-brand-deep sm:text-5xl">看看商品與禮盒</h1>
         <p className="mt-3 max-w-3xl text-lg leading-8 text-brand-slate">
-          我們目前提供三條主線：禪意日常玻璃杯、小型桌面型空氣清新機｜完整禮盒版、禪意香氛杯｜4.0mm 柱狀活性炭列陣封裝版。
+          我們目前提供三款商品：禪意日常玻璃杯禮盒、禪意香氛杯禮盒、小型桌面型空氣清新機｜完整禮盒版。
         </p>
         <div className="mt-5 flex flex-wrap gap-2">
           {sceneTags.map((tag) => (
