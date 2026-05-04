@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s｜微塵星海",
   },
   description:
-    "微塵星海是一個以佛教祝福、靜心陪伴與禪意生活為核心的品牌；加入 LINE 領今日祝福，並看看可自用也可送禮的禪意選品。",
+    "微塵星海是一個以佛教祝福、靜心陪伴與禪意生活為核心的品牌；加入 LINE 領今日祝福，並看看可自用也可送禮的商品與禮盒。",
 };
 
 export default function RootLayout({

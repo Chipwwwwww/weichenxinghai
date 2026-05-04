@@ -16,7 +16,7 @@ export default function CartPage() {
 
       {items.length === 0 ? (
         <section className="mt-8 rounded-3xl border border-brand-teal/15 bg-white p-8 text-center">
-          <p className="text-lg text-brand-slate">目前購物車是空的，先去看看禪意選品吧。</p>
+          <p className="text-lg text-brand-slate">目前購物車是空的，先去看看商品與禮盒吧。</p>
           <Link href="/shop" className="tap-target mt-5 inline-flex rounded-full bg-brand-teal px-6 py-3 text-base font-semibold text-white">
             去選購商品
           </Link>

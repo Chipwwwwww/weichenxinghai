@@ -10,7 +10,7 @@ import { useCart } from "@/components/cart/CartProvider";
 const navItems = [
   { href: "/", label: "品牌首頁" },
   { href: "/about", label: "了解微塵星海" },
-  { href: "/shop", label: "看看禪意選品" },
+  { href: "/shop", label: "看看商品與禮盒" },
   { href: "/faq", label: "常見問題" },
   { href: "/shipping-payment", label: "配送與付款" },
 ] as const;

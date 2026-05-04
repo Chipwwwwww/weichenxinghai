@@ -10,7 +10,7 @@ export default function Footer() {
         <p className="mt-3 text-3xl font-semibold text-brand-deep sm:text-4xl">把祝福，變成每天都能傳遞的日常。</p>
         <p className="mt-3 max-w-2xl text-base leading-8 text-brand-slate">
           微塵星海是一個以佛教祝福、靜心陪伴與禪意生活為核心的品牌。
-          你可以先加入 LINE 領今日祝福，再慢慢看看可自用也可送禮的禪意選品，並透過購物車與結帳流程完成下單。
+          你可以先加入 LINE 領今日祝福，再慢慢看看可自用也可送禮的商品與禮盒，並透過購物車與結帳流程完成下單。
         </p>
 
         <div className="mt-6 flex flex-wrap gap-5 text-base text-brand-slate">
@@ -18,7 +18,7 @@ export default function Footer() {
             了解微塵星海
           </Link>
           <Link href="/shop" className="tap-target font-medium hover:text-brand-teal">
-            看看禪意選品
+            看看商品與禮盒
           </Link>
           <Link href="/contact" className="tap-target font-medium hover:text-brand-teal">
             聯絡我們
@@ -35,6 +35,18 @@ export default function Footer() {
           <a href={siteConfig.lineBlessingUrl} target="_blank" rel="noreferrer" className="tap-target font-medium hover:text-brand-teal">
             加入 LINE 領今日祝福
           </a>
+          <Link href="/coupons" className="tap-target font-medium hover:text-brand-teal">
+            今日優惠／查看優惠券
+          </Link>
+          <Link href="/disclaimer" className="tap-target font-medium hover:text-brand-teal">
+            免責聲明
+          </Link>
+          <Link href="/community-guidelines" className="tap-target font-medium hover:text-brand-teal">
+            LINE 社群規範
+          </Link>
+          <Link href="/support-creation" className="tap-target font-medium hover:text-brand-teal">
+            支持創作團隊
+          </Link>
         </div>
 
         <div className="mt-6 rounded-2xl border border-brand-teal/20 bg-white px-4 py-4">

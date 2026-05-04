@@ -16,7 +16,7 @@ export default function CheckoutPage() {
         <h1 className="text-4xl font-semibold text-brand-deep">結帳</h1>
         <p className="mt-4 text-lg text-brand-slate">購物車目前沒有商品，請先加入商品再前往結帳。</p>
         <Link href="/shop" className="tap-target mt-5 inline-flex rounded-full bg-brand-teal px-6 py-3 text-base font-semibold text-white">
-          回到選品頁
+          回到商品與禮盒頁
         </Link>
       </div>
     );
