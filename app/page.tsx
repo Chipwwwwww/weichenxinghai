@@ -76,7 +76,7 @@ export default function HomePage() {
             </div>
             <p className="mt-4 text-base leading-8 text-brand-slate">
               加入 LINE 領今日祝福，先收下今日平安圖與今日靜心小語，再把祝福傳給你在意的人。當你想把這份心意留得更久，
-              再看看商品與禮盒與祝福儀式物。
+              再看看商品與禮盒。
             </p>
           </div>
         </div>
@@ -205,7 +205,7 @@ export default function HomePage() {
 
       <section className="mx-auto w-full max-w-6xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8">
         <div className="rounded-3xl border border-brand-gold/40 bg-[#fffdf8] p-6 sm:p-8">
-          <h2 className="text-3xl font-semibold text-brand-deep">祝福儀式物 / 隨身祝福系統</h2>
+          <h2 className="text-3xl font-semibold text-brand-deep">未來內容整理方向</h2>
           <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {ritualItems.map((item) => (
               <div key={item} className="rounded-xl border border-brand-teal/20 bg-white px-4 py-4 text-base leading-8 text-brand-slate">
