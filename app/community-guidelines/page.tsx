@@ -1,0 +1,1 @@
+export default function Page(){return <main className='mx-auto max-w-5xl space-y-4 px-4 py-10'><h1 className='text-4xl font-semibold'>LINE 社群規範</h1><p>社群名稱：微塵星海｜分享今日祝福。</p><p>歡迎分享：今日祝福小語、平安圖、修行故事、禮盒使用感受。禁止詐騙、投資借貸博弈色情、政治攻擊、個資外洩、冒名官方、神奇功效宣稱、宗教功德保證、人身攻擊與違法內容。</p></main>}
