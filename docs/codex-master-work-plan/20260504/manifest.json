@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-05-04T08:02:34.362619Z",
+  "main_file": "CODEX_MASTER_WORK_SAFE_PATCH_FULL_PLAN_20260504.md",
+  "txt_file": "CODEX_MASTER_WORK_SAFE_PATCH_FULL_PLAN_20260504.txt",
+  "source_docx": [
+    "微塵星海_LINE六格文案話術與技術接線_前台紅字人工終檢版_已檢查無場域_20260504.docx",
+    "微塵星海_社群與通路文案總底稿_LINE六格貼齊定稿版_場域改空間_20260504.docx"
+  ],
+  "chunks": 5,
+  "notes": "Single merged Codex plan with full extracted source docs and strict safe-patch instructions for master/work."
+}
