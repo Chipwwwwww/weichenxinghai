@@ -1,0 +1,1 @@
+export default function PageCommunityGuidelines(){return <div className="p-8 space-y-3"><h1>LINE 社群規範</h1><p>微塵星海｜分享今日祝福</p><h2>歡迎分享</h2><p>今日祝福小語、平安圖、修行故事、禮盒使用感受。</p><h2>禁止內容</h2><p>詐騙、投資博弈、政治攻擊、醫療或神奇功效宣稱、宗教功德保證等。</p></div>}
