@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "小型桌面型空氣清新機｜完整禮盒版", description: "焚香後的小空間，也值得一份更舒服的日常照顧。" };
+export default function Page(){return <main className="mx-auto max-w-5xl space-y-4 px-4 py-10"><h1 className="text-4xl font-semibold">焚香後的小空間，也值得一份更舒服的日常照顧。</h1><p>小型桌面型空氣清新機｜完整禮盒版｜NT$3,980</p><p>把主機、行動電源、充電線、充電器、使用說明與高級禮盒封裝一次整理好。</p><p>焚香後，客廳、供桌周邊、床邊或書桌邊容易留下煙味與殘留味道；搭配通風與桌邊空氣清新，日常氣氛會更舒服。</p><ul><li>完整禮盒版</li><li>主機、行動電源、充電線、充電器一次備齊</li><li>附使用說明與禮盒封裝</li><li>適合供桌旁、床邊、書桌邊、閱讀區與小房間日常使用</li><li>建議搭配通風使用</li><li>更適合送給家人、長輩或第一次使用者</li></ul><p>適合誰：適合小空間日常使用者、家人與長輩。</p><p>不適合期待什麼：不宣稱醫療級淨化、保證除 PM2.5、除甲醛、除病毒、改善健康或未經認證除菌率。</p><p>FAQ：重點是完整禮盒版與承接服務，不是裸機比價。</p></main>}

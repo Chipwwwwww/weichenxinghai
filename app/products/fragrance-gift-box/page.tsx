@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "禪意香氛杯禮盒", description: "一份沉穩香氣，讓祝福留在每天經過的地方。" };
+export default function Page(){return <main className="mx-auto max-w-5xl space-y-4 px-4 py-10"><h1 className="text-4xl font-semibold">一份沉穩香氣，讓祝福留在每天經過的地方。</h1><p>禪意香氛杯禮盒｜NT$1,980</p><p>禪意香氛杯禮盒採封裝式香氛膏、4.0mm 柱狀活性炭列陣設計、金色上蓋與高級禮盒封裝。</p><p>香氣不只是一種味道，也會影響一個空間給人的第一感受。</p><ul><li>封裝式香氛膏</li><li>4.0mm 柱狀活性炭列陣設計</li><li>金色上蓋與黑色列陣形成沉穩識別</li><li>香氣偏內斂陪伴，不走濃烈刺激路線</li><li>適合床頭、玄關、書桌、靜心位置</li><li>高級禮盒封裝，自用有質感，結緣也體面</li></ul><p>適合誰：自用、探訪、節慶與結緣。</p><p>不適合期待什麼：不宣稱強力除臭、除甲醛、空氣清淨、改善健康、助眠治療、治療過敏。</p><p>FAQ：可加入 LINE 領今日祝福、找真人客服、第一次下單可貨到付款。</p></main>}

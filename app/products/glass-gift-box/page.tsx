@@ -1,0 +1,3 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = { title: "禪意日常玻璃杯禮盒", description: "每天入口的杯子，也可以是一份長久安心的祝福。" };
+export default function Page(){return <main className="mx-auto max-w-5xl space-y-4 px-4 py-10"><h1 className="text-4xl font-semibold">每天入口的杯子，也可以是一份長久安心的祝福。</h1><p>禪意日常玻璃杯禮盒｜NT$888</p><p>禪意日常玻璃杯禮盒以簡潔玻璃材質、光影流動感、純圓形軟木杯墊與高級禮盒封裝，整理成一組每天都會用到的日常祝福。</p><p>每天喝水、泡茶的杯子，其實比很多禮物更貼近生活。很多家庭長輩習慣用杯子裝熱水、熱茶；玻璃材質不易老化，也沒有塑化劑疑慮。</p><ul><li>玻璃材質不易老化</li><li>沒有塑化劑疑慮</li><li>每天喝水、泡茶都用得到</li><li>純圓形軟木杯墊讓禮盒更完整</li><li>高級禮盒封裝，送禮體面</li><li>適合自用、送父母、老師、親友與長輩</li></ul><p>適合誰：適合自用、探訪、節慶與結緣。</p><p>不適合期待什麼：不宣稱保健、排毒、治療、能量轉換或任何醫療效果。</p><p>FAQ：第一次下單可貨到付款；可加入 LINE 找真人客服協助。</p></main>}

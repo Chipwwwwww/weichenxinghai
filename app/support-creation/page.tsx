@@ -1,0 +1,1 @@
+export default function Page(){return <main className='mx-auto max-w-5xl space-y-4 px-4 py-10'><h1 className='text-4xl font-semibold'>支持創作團隊</h1><p>這是給微塵星海創作團隊成員的自願支持，不會兌換商品、服務、會員、折扣券、抽獎資格、專屬客服、投資回報、公益捐款收據或宗教功德承諾。</p></main>}
